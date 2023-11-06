@@ -2,6 +2,13 @@
 
 {% if customer.metafields.custom.positions_report %}
   {{ customer.metafields.custom.positions_report }}
+  
+{% assign positions_report = customer.metafields.custom.positions_report %}
+{% for item in positions_report %}
+    {{ item }}
+{% endfor %}
+
+  
 {% else %}
   No custom metafield value available.
 {% endif %}
