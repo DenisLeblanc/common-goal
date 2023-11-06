@@ -6,8 +6,10 @@
 {% for item in positions_report %}
     {% assign metaobject = item | split: '/' %}
     {% assign meta_id = metaobject.last %}
-    {{ customer.metafields[] }}
+    {% assign metafield_value = customer.metafields[meta_id] %}
+    {{ metafield_value }}
 {% endfor %}
+
 
   
   
