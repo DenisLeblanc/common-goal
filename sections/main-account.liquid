@@ -29,7 +29,13 @@
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
-      {% assign main_menu = linklists['main-menu'] %}
+      <div class="sidebar-menu">
+  <ul>
+    {% for link in linklists.sidebar-menu.links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 
 
       {% paginate customer.orders by 20 %}
