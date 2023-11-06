@@ -14,7 +14,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Guatemala Carrizal",
-            "icon": "check_mark",
+            "icon": "lock",
             "row_content": "<p>These are the coffee details<\/p>",
             "page": ""
           }
@@ -55,7 +55,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "POSITION REPORT",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
