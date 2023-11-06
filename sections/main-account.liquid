@@ -30,12 +30,11 @@
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
       <!-- Account Menu -->
-      <ul class="main-menu">
-        {% for link in linklists.main-menu.links %}
+      <ul class="account-menu">
+        {% for link in linklists.account-menu.links %}
           <li><a href="{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
       </ul>
-
 
 
       {% paginate customer.orders by 20 %}
