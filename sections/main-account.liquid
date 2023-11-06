@@ -29,13 +29,22 @@
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
-      <div class="sidebar-menu">
+      <!-- Main Menu -->
+<ul class="main-menu">
+  {% for link in linklists.main-menu.links %}
+    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<!-- Sidebar Menu -->
+<div class="sidebar-menu">
   <ul>
     {% for link in linklists.sidebar-menu.links %}
       <li><a href="{{ link.url }}">{{ link.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
+
 
 
       {% paginate customer.orders by 20 %}
