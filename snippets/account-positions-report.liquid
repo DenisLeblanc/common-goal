@@ -3,6 +3,9 @@
 {% if customer.metafields.custom.positions_report %}
 
  Yes, we have meta
+ {% if customer.metafields.positions.coffee_name %}
+  <p>{{ customer.metafields.positions.coffee_name }}</p>
+{% endif %}
 
  {{ customer.metafields.custom.positions_report }}
   
