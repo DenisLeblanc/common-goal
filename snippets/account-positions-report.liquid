@@ -1,5 +1,12 @@
 <h2>Positions Report</h2>
 
-{{ customer.metafields.custom.positions_report }}
+{% if customer.metafields.custom.positions_report %}
+  {{ customer.metafields.custom.positions_report }}
+{% else %}
+  No custom metafield value available.
+{% endif %}
+
+
+
 
 (location: 'snippets/account-positions-report.liquid')
