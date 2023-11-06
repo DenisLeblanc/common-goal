@@ -35,22 +35,14 @@
     "rich_text": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Collaborating with the like-minded Specialty Coffee Community. We are a Vancouver based Canadian Specialty Coffee Import and Service provider. <\/p>"
           }
         }
       },
       "block_order": [
-        "heading",
         "text"
       ],
       "settings": {
