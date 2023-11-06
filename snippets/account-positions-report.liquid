@@ -2,24 +2,9 @@
 
 {% if customer.metafields.custom.positions_report %}
 
-  {% assign positions_report = customer.metafields.custom.positions_report %}
-{% for item in positions_report %}
-    {% assign metaobject = item | split: '/' %}
-    {% assign meta_id = metaobject.last %}
-    {% assign metafield_value = customer.metafields[meta_id] %}
-    {{ metafield_value }}
-{% endfor %}
-
-
-  
-  
-  {{ customer.metafields.custom.positions_report | inspect }}
-
-  
-  {{ customer.metafields.custom.positions_report | json }}
-
-  
-  {{ customer.metafields.custom.positions_report }}
+  {% assign handle = "positions-9ozz2dl8" %}
+{% assign metafield_value = customer.metafields.custom[handle] %}
+{{ metafield_value }}
   
 {% assign positions_report = customer.metafields.custom.positions_report %}
 {% for item in positions_report %}
