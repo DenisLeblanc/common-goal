@@ -2,9 +2,7 @@
 
 {% if customer.metafields.custom.positions_report %}
 
-{% assign position = customer.metafields.custom.positions %}
-
-{{ position }}
+  {{ customer.metafields.custom }}
   
 {% else %}
   No custom metafield value available.
