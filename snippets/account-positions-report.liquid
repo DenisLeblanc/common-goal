@@ -3,7 +3,9 @@
 
   {{ customer.metaobject.test_object.test_object_type }}
 
-
+{% for key in customer.metafields.custom %}
+  {{ key }}: {{ customer.metafields.custom[key] }}
+{% endfor %}
 
 
 
