@@ -17,8 +17,10 @@
 
 {% endfor %}
 
-{%  assign products = all_products[customer.metafields.accentuate.coffee] %}
-{{ products[] }}
+
+{% for item in customer.metafields.accentuate.coffee %}
+    {{ item }}
+{% endfor %}
 
 
 
