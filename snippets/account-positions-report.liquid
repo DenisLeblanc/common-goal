@@ -17,7 +17,8 @@
 
 {% endfor %}
 
-{{ all_products[customer.metafields.accentuate.coffee] }}
+{%  assign products = all_products[customer.metafields.accentuate.coffee] %}
+{{ products }}
 
 
 
