@@ -10,6 +10,7 @@
   {% if field_section.id != current_section.id %}
   <h3>{{ field_section.label }}</h3>
   {% endif %}
+  
   <p>{{ field.label }}: {{ field_value }}</p>
 
   {% assign current_section = field_section %}
@@ -17,7 +18,7 @@
 {% endfor %}
 
 
-
+{{ field.section }}
 
 
 (location: 'snippets/account-positions-report.liquid')
