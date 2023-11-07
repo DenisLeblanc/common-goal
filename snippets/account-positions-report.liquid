@@ -3,7 +3,13 @@
 {% if customer.metafields.custom.positions_report %}
 
 
-  {{ customer.metafields.custom.positions['coffee_name'] }}
+  {% assign positions_report = customer.metafields.custom.positions_report %}
+{% for item in positions_report %}
+    {% assign metaobject = item | split: '/' %}
+    {% assign meta_id = metaobject.last %}
+    {{ customer.metafields[meta_id] }}
+{% endfor %}
+
 
  {{ customer.metafields.custom.positions_report }}
   
