@@ -4,11 +4,7 @@
 
   {{ customer.metafields.custom.positions_report.value }}
 
-  {% for item in customer.metafields.custom.positions_report.value %}
-  {% for key in item %}
-    {{ key }}: {{ item[key] }}
-  {% endfor %}
-{% endfor %}
+
 
   
 {% else %}
