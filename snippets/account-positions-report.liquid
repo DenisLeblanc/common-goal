@@ -1,19 +1,9 @@
 <h2>Positions Report</h2>
 
-{% if customer.metafields.custom.positions_report %}
 
-  {{ customer.metafields.custom.positions_report.value }}
+  {{ customer.metafields }}
 
-  {% for item in customer.metafields.custom.positions_report.value %}
-  {% for key in item %}
-    {{ key }}: {{ item[key] }}
-  {% endfor %}
-{% endfor %}
 
-  
-{% else %}
-  No custom metafield value available.
-{% endif %}
 
 
 
