@@ -11,14 +11,14 @@
   <h3>{{ field_section.label }}</h3>
   {% endif %}
   
-  <p>{{ field.name }}: {{ field_value }}</p>
+  <p>{{ field.label }}: {{ field_value }}</p>
 
   {% assign current_section = field_section %}
 
 {% endfor %}
 
 
-{{ shop.metafields.acf_settings.customer.fields }}
+{{ customer.metafields[field.namespace][field.name] }}
 
 
 (location: 'snippets/account-positions-report.liquid')
