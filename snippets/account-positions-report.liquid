@@ -3,6 +3,13 @@
 {% if customer.metafields.custom.positions_report %}
 
   {{ customer.metafields.custom.positions_report.value }}
+
+  {% for item in customer.metafields.custom.MetaobjectListDrop %}
+  {% for key in item %}
+    {{ key }}: {{ item[key] }}
+  {% endfor %}
+{% endfor %}
+
   
 {% else %}
   No custom metafield value available.
