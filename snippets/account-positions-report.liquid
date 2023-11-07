@@ -10,8 +10,8 @@
     {{ customer.metaobject }}
 {% endfor %}
 
+{{ customer.metafields.custom.positions_report | json }}
 
- {{ metaobjects }}
   
 {% else %}
   No custom metafield value available.
