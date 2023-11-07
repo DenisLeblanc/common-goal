@@ -2,8 +2,10 @@
 
 {% if customer.metafields.custom.positions_report %}
 
- Yes, we have meta
- {{ customer }}
+
+  {{ customer.metafields.positions.coffee_name }}
+
+ {{ ## customer.metafields.custom.positions_report }}
   
 {% else %}
   No custom metafield value available.
