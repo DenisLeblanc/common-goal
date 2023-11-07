@@ -2,9 +2,8 @@
 
 {% if customer.metafields.custom.positions_report %}
 
-{% for item in customer.metafields.custom.positions_report %}
-    {{ item.property_name }}
-{% endfor %}
+{{ customer.metafields.custom.positions_report | inspect }}
+
 
 
   
