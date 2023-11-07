@@ -2,11 +2,8 @@
 
 {% if customer.metafields.custom.positions_report %}
 
-{{ customer.metafields.custom.positions_report }}
+{{ assign position = customer.metafields.custom.positions_report }}
 
-
-  {% assign position = customer.metafields.custom.position %}
-{{ position }}
 
   
 {% else %}
