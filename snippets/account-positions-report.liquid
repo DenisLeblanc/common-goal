@@ -4,7 +4,9 @@
 
 {{ customer.metafields.custom.positions_report }}
 
-{{ customer.metafields.custom.position.object }}
+
+  {% assign position = customer.metafields.custom.position %}
+{{ position }}
 
   
 {% else %}
