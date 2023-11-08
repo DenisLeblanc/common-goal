@@ -16,9 +16,9 @@
   {% assign current_section = field_section %}
 
   {% if field.label == 'Coffee' %}
-    {% assign coffee = field_value | replace: '-', ' ' %}
+    {% assign coffee = field_value %}
 
-    {{ coffee }}
+    {{ coffee.replace: '-', ' ' }}
   {% endif %}
 
 {% endfor %}
