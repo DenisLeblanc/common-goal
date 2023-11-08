@@ -21,11 +21,6 @@
 
 
 {% for item in customer.metafields.accentuate.coffee %}
-  {% if field.label == 'Coffee' %}
-    {{ field_value | replace: '-', ' ' }}
-
-    {{ coffee }}
-  {% endif %}
     {{ item }}
 {% endfor %}
 
