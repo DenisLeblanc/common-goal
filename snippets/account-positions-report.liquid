@@ -12,7 +12,7 @@
   {% for field in shop.metafields.acf_settings.customer.fields %}
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
     <tr>
-    {{ field_value }}
+      <td>{{ field_value }}</td>
     </tr>
   {% endfor %}
   
