@@ -18,12 +18,49 @@
   {% if field.label == 'Coffee' %}
     {% assign coffee = field_value %}
 
-{% for product in collections.all.products %}
-  {% if product.title == coffee %}
-    {{ product.title }} - {{ product.price | money }}
-    <!-- Add other product properties as needed -->
-  {% endif %}
-{% endfor %}
+<div id="product-info"></div>
+
+<script>
+  const productName = coffee;
+  const query = `
+    {
+      products(first: 1, query: "title:${productName}") {
+        edges {
+          node {
+            title
+            handle
+            priceRange {
+              maxVariantPrice {
+                amount
+                currencyCode
+              }
+            }
+            # Add other desired product fields here
+          }
+        }
+      }
+    }
+  `;
+
+  fetch('/api/2023-11/graphql.json', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Shopify-Storefront-Access-Token': 'your_storefront_access_token'
+    },
+    body: JSON.stringify({ query }),
+  })
+    .then(response => response.json())
+    .then(data => {
+      const product = data.data.products.edges[0].node;
+      document.getElementById('product-info').innerHTML = `${product.title} - ${product.priceRange.maxVariantPrice.amount} ${product.priceRange.maxVariantPrice.currencyCode}`;
+      // Add other product fields as needed
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+</script>
+
 
   {% endif %}
 
