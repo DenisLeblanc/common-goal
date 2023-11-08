@@ -17,7 +17,8 @@
 
   {% if field.label == 'Coffee' %}
     {% assign coffee = field_value %}
-    {{ coffee }}
+    {{ coffee | replace: '-', ' ' }}
+    
   {% endif %}
 
 {% endfor %}
