@@ -17,8 +17,14 @@
 
   {% if field.label == 'Coffee' %}
     {% assign coffee = field_value %}
-    {{ product[coffee] }}
-    {{ coffee }}
+
+{% for product in collections.all.products %}
+  {% if product.title == coffee %}
+    {{ product.title }} - {{ product.price | money }}
+    <!-- Add other product properties as needed -->
+  {% endif %}
+{% endfor %}
+
   {% endif %}
 
 {% endfor %}
