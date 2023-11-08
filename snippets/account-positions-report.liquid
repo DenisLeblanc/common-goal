@@ -12,7 +12,7 @@
     <h3>{{ field_section.label }}</h3>
   {% endif %}
   
-  <p>{{ field.label }}: {{ customer.metafields[field.namespace][field.value] }}</p>
+  <p>{{ field.label }}: {{ field_value }}</p>
 
   {% assign current_section = field_section %}
   {% assign current_value = field_section %}
