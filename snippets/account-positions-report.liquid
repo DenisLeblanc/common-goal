@@ -15,13 +15,12 @@
 
   {% assign current_section = field_section %}
 
-  
 
 {% endfor %}
 
 
 {% for item in customer.metafields.accentuate.coffee %}
-    {{ item }}
+    {{ item | replace: '-', ' ' }}
 {% endfor %}
 
 
