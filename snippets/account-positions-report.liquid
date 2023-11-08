@@ -2,6 +2,8 @@
 
 {{ shop.metafields.acf_settings.customer }}
 
+<table>
+  
 
 {% for field in shop.metafields.acf_settings.customer.fields %}
 
@@ -11,14 +13,20 @@
   {% if field_section.id != current_section.id %}
     <h3>{{ field_section.label }}</h3>
   {% endif %}
+
+  <tr>
+    <th>{{ field.label }}
+  </tr>
   
   <p>{{ field.label }}: {{ field_value }}</p>
 
   {% assign current_section = field_section %}
   {% assign current_value = field_section %}
 
-
 {% endfor %}
+
+</table>
+
 
 
 {% for item in customer.metafields.accentuate.coffee %}
