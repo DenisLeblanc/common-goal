@@ -30,16 +30,16 @@
 
 
 {% for item in customer.metafields.accentuate.coffee %}
-    {{ item | replace: '-', ' ' }}
+    <p>{{ item | replace: '-', ' ' }}</p>
 {% endfor %}
 {% for item in customer.metafields.accentuate.status %}
-    {{ item }}<br />
+    <p>{{ item }}</p>
 {% endfor %}
 {% for item in customer.metafields.accentuate.booked %}
-    {{ item }}
+    <p>{{ item }}</p>
 {% endfor %}
 {% for item in customer.metafields.accentuate.balance %}
-    {{ item }}
+    <p>{{ item }}</p>
 {% endfor %}
 
 
