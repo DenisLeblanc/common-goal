@@ -33,9 +33,7 @@
     {{ item | replace: '-', ' ' }}
 {% endfor %}
 {% for item in customer.metafields.accentuate.status %}
-  {% for name in item %}
     {{ name }}<br />
-  {% endfor %}
 {% endfor %}
 {% for item in customer.metafields.accentuate.booked %}
     {{ item }}
