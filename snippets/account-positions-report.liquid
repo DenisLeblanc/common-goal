@@ -15,21 +15,15 @@
         <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
-  
-  {% for field in shop.metafields.acf_settings.customer.fields %}
-    {% assign field_value = customer.metafields[field.namespace][field.name] %}
-
-  {% endfor %}
     
   {% for field in shop.metafields.acf_settings.customer.fields %}
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
     {% for value in field_value %}
+      
       <td>{{ value }}</td>
     {% endfor %}
-    
-      
-    
+
   {% endfor %}
   <tr>
   </tr>
