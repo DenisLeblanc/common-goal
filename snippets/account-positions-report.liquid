@@ -17,7 +17,7 @@
 {% for field in shop.metafields.acf_settings.customer.position.fields %}
 
   {% assign field_section = field.section %}
-  {% assign field_value = customer.metafields.position[field.name] %}
+  {% assign field_value = customer.metafields.position %}
 
   {% if field_section.id != current_section.id %}
   <h3>{{ field_section.label }}</h3>
