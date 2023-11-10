@@ -12,11 +12,11 @@
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
   {% for section in field_section %}
-<h3>{{ field_section.label }}</h3>
+    <p>{{ field.label }}: {{ field_value }}</p>
   {% endfor %}
   
   {% if field_section.id != current_section.id %}
-  c
+
   {% endif %}
   <p>{{ field.label }}: {{ field_value }}</p>
 
