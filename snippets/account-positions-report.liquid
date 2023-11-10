@@ -16,6 +16,8 @@
     {{ i }}
     <p>{{ field.label }}: {{ field_value }}</p>
   {% endfor %}
+
+  Section ID: {{ field_section.id }}
   
   {% if field_section.id != current_section.id %}
 
