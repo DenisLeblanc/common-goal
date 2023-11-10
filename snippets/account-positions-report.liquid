@@ -3,11 +3,48 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
+{% assign fields = customer.metafields.position.coffee %}
 
+        {% for value in fields %}
+
+            {% assign i = forloop.index0 %}
+            
+            <div class="item item--{{ i }}">
+                <h4>{{ customer.metafields.fields.coffee[i] }}</h4>
+                <p>{{ customer.metafields.fields.status[i] }}</p>
+            </div>
+            
+        {% endfor %}
+
+
+{% for header in customer.metafields.accentuate.coffee %} 
+  <h3>{{ header }}</h3>
+  <p>{{ product.metafields.accentuate.position[forloop.index0] }}</p>
+{% endfor %} 
+
+{% for field in shop.metafields.customer.position.fields %}
+  {% assign field_value = customer.metafields[field.namespace][field.name] %}
+  <p>{{ field.label }}: {{ field_value }}</p>
+{% endfor %}
+
+
+{% for field in shop.metafields.acf_settings.customer.fields %}
+
+  {% assign field_section = field.section %}
+  {% assign field_value = customer.metafields[field.namespace][field.name] %}
+
+  {% if field_section.id != current_section.id %}
+  <h3>{{ field_section.label }}</h3>
+  {% endif %}
+  <p>{{ field.label }}: {{ field_value }}</p>
+
+  {% assign current_section = field_section %}
+
+{% endfor %}
 
 <table>
   <tr>
-    {% for field in customer.metafields.accentuate.fields %}
+    {% for field in shop.metafields.acf_settings.customer.fields %}
         <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
