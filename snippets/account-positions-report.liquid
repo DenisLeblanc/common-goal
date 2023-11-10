@@ -16,7 +16,8 @@
     {% endfor %}
   </tr>
   <tr>
-    {{ customer.metafields.accentuate.coffee }}
+    {% assign coffee = customer.metafields.accentuate.coffee %}
+    {{ coffee }}
   </tr>
     
   {% for field in shop.metafields.acf_settings.customer.fields %}
