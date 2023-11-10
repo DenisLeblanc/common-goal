@@ -5,22 +5,23 @@
 
 <table>
   <tr>
-{% for field in shop.metafields.acf_settings.customer.fields %}
-
-  {% assign field_section = field.section %}
-  {% assign field_value = customer.metafields[field.namespace][field.name] %}
-<th>{{ field.label }}</th>
-  {% if field_section.id != current_section.id %}
+    {% for field in shop.metafields.acf_settings.customer.fields %}
+      {% assign field_section = field.section %}
+      {% assign field_value = customer.metafields[field.namespace][field.name] %}
+      
+      <th>{{ field.label }}</th>
+      {{ field_section }}
     
-  {% endif %}
+      {% if field_section.id != current_section.id %}   
+      {% endif %}
 
-  
-  
+      {% assign current_section = field_section %}
 
-  {% assign current_section = field_section %}
-
-{% endfor %}
-</tr>
+    {% endfor %}
+  </tr>
+  <tr>
+    
+  </tr>
 </table>
 
 {% for field in shop.metafields.acf_settings.customer.fields %}
