@@ -8,7 +8,7 @@
   <p>{{ product.metafields.accentuate.coffee[forloop.index0] }}</p>
 {% endfor %} 
 
-{% for field in shop.metafields.acf_settings.customer.fields %}
+{% for field in shop.metafields.customer.position.fields %}
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
   <p>{{ field.label }}: {{ field_value }}</p>
 {% endfor %}
