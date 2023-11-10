@@ -3,18 +3,7 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% assign faqs = page.metafields.faq.heading %}
 
-        {% for value in faqs %}
-
-            {% assign i = forloop.index0 %}
-            
-            <div class="item item--{{ i }}">
-                <h4>{{ page.metafields.faq.heading[i] }}</h4>
-                <p>{{ page.metafields.faq.content[i] }}</p>
-            </div>
-            
-        {% endfor %}
 
 
 {% for field in shop.metafields.acf_settings.customer.fields %}
