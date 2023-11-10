@@ -21,10 +21,9 @@
 
   {% assign field_section = field.section %}
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
-  
+  {% assign i = forloop.index0 %}
 
   {% for section in field_section %}
-    {% assign i = forloop.index0 %}
     {{ i }}
     <p>{{ field.label }}: {{ field_value }}</p>
   {% endfor %}
