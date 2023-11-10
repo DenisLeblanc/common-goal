@@ -21,7 +21,7 @@
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
     {% for value in field_value %}
-      <td>{{ value }}</td>
+      <td>{{ value[forloop.index0] }}</td>
     {% endfor %}
     
       
