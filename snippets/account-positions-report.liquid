@@ -9,8 +9,8 @@
       {% assign field_section = field.section %}
       {% assign field_value = customer.metafields[field.namespace][field.name] %}
       
-      <th>{{ field.label }}</th>
-      {{ field_section }}
+      <th>{{ field.label }}{{ field_section }}</th>
+      
     
       {% if field_section.id != current_section.id %}   
       {% endif %}
