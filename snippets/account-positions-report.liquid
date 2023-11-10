@@ -4,15 +4,14 @@
 
 
 {% assign fields = customer.metafields.position %}
-{{ fields }}
 
         {% for item in fields %}
 
             {% assign i = forloop.index %}
             
             <div class="item item--{{ i }}">
-                {{ heading[i] }}
-                {{ content[i] }}
+                {{ item[i] }}
+                {{ item[i] }}
             </div>
             
         {% endfor %}
