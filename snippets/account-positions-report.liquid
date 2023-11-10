@@ -18,7 +18,7 @@
   </tr>
 
   <tr>
-  {% for field in shop.metafields.acf_settings.customer.fields %}
+  {% for field in shop.metafields.acf_settings.customer.fields[forloop.index0] %}
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
     {% for value in field_value %}
