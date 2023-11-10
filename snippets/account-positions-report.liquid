@@ -10,18 +10,23 @@
 
 <table>
   <tr>
-    {% for field in shop.metafields.acf_settings.customer.fields %}
-      {% assign field_value = customer.metafields[field.namespace][field.name] %}
-        <th>{{ field.label }}</th>
+    {% for head in shop.metafields.acf_settings.customer.fields %}
+      {% assign head_value = customer.metafields[head.namespace][head.name] %}
+        <th>{{ head.label }}</th>
     {% endfor %}
   </tr>
 
   <tr>
+    {% for field in shop.metafields.acf_settings.customer.fields %}
+      {% assign field_value = customer.metafields[field.namespace][field.name] %}
+
+    {% endfor %}
+    
   {% for field in shop.metafields.acf_settings.customer.fields %}
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
     {% for value in field_value %}
-      <td>{{ value[forloop.index0] }}</td>
+      <td>{{ value }}</td>
     {% endfor %}
     
       
