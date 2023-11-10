@@ -9,7 +9,7 @@
 {% endfor %}
 
 
-{% for field in shop.metafields.acf_settings.product.fields %}
+{% for field in shop.metafields.acf_settings.customer.fields %}
 
   {% assign field_section = field.section %}
   {% assign field_value = product.metafields[field.namespace][field.name] %}
