@@ -4,7 +4,7 @@
 
 
 {% for field in shop.metafields.acf_settings.product.fields %}
-  {% assign field_value = product.metafields[field.namespace][field.name] %}
+  {% assign field_value = customer.metafields[field.namespace][field.name] %}
   <p>{{ field.label }}: {{ field_value }}</p>
 {% endfor %}
 
