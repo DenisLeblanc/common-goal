@@ -14,9 +14,8 @@
     {% endfor %}
   </tr>
 
-  {% assign field_value = customer.metafields.position.coffee %}
+  {% for value in customer.metafields.position.coffee %}
 
-  {% for value in field_value %}
 
   <tr>
     cell 
