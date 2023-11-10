@@ -14,7 +14,7 @@
 {% endfor %}
 
 
-{% for field in shop.metafields.customer.position.fields %}
+{% for field in shop.metafields.acf_settings.customer.position.fields %}
 
   {% assign field_section = field.section %}
   {% assign field_value = customer.metafields.position[field.name] %}
