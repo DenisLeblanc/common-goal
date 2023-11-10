@@ -14,7 +14,7 @@
     {% endfor %}
   </tr>
 
-  {% for item in customer.metafields.position.coffee %}
+  {% for item in customer.metafields[item.namespace][item.name] %}
 
     <tr>
     yes!
