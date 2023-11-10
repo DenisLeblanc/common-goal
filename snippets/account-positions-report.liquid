@@ -3,18 +3,7 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% assign fields = customer.metafields.position.coffee %}
 
-        {% for value in fields %}
-
-            {% assign i = forloop.index0 %}
-            
-            <div class="item item--{{ i }}">
-                <h4>{{ customer.metafields.fields.coffee[i] }}</h4>
-                <p>{{ customer.metafields.fields.status[i] }}</p>
-            </div>
-            
-        {% endfor %}
 
 
 {% for field in shop.metafields.acf_settings.customer.fields %}
