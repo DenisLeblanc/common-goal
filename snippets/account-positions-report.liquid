@@ -3,11 +3,6 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% for header in product.metafields.accentuate.header %} 
-  <h3>{{ header }}</h3>
-  <p>{{ product.metafields.accentuate.measurement[forloop.index0] }}</p>
-{% endfor %} 
-
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}
