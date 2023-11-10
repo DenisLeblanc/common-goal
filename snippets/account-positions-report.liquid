@@ -3,26 +3,25 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
+<table>
+  <tr>
 {% for field in shop.metafields.acf_settings.customer.fields %}
 
   {% assign field_section = field.section %}
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
   {% if field_section.id != current_section.id %}
-    <tr>
-    {% for field in shop.metafields.acf_settings.customer.fields %}
-        <th>{{ field.label }}</th>
-    {% endfor %}
-    </tr>
+    <th>{{ field.label }}</th>
   {% endif %}
 
   
-  <p>{{ field.label }}: {{ field_value }}</p>
+  
 
   {% assign current_section = field_section %}
 
 {% endfor %}
-
+</tr>
+</table>
 
 {% for field in shop.metafields.acf_settings.customer.fields %}
 
