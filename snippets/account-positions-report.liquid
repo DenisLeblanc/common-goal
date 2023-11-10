@@ -3,7 +3,7 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% for header in customer.metafields.accentuate.coffee %} 
+{% for header in customer.metafields.accentuate.position %} 
   <h3>{{ header }}</h3>
   <p>{{ product.metafields.accentuate.position[forloop.index0] }}</p>
 {% endfor %} 
