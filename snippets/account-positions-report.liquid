@@ -25,7 +25,8 @@
 
   {% for section in field_section %}
     {% assign i = forloop.index0 %}
-    <p>{{ field.label[i] }}: {{ field_value[i] }}</p>
+    {{ i }}
+    <p>{{ field.label }}: {{ field_value }}</p>
   {% endfor %}
   
   {% if field_section.id != current_section.id %}
