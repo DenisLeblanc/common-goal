@@ -3,6 +3,11 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
+{% for header in customer.metafields.accentuate.coffee %} 
+  <h3>{{ header }}</h3>
+  <p>{{ product.metafields.accentuate.coffee[forloop.index0] }}</p>
+{% endfor %} 
+
 {% for field in shop.metafields.acf_settings.customer.fields %}
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
   <p>{{ field.label }}: {{ field_value }}</p>
