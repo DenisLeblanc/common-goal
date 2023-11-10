@@ -6,16 +6,11 @@
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}
-      {% assign field_section = field.section %}
-      {% assign field_value = customer.metafields[field.namespace][field.name] %}
-      
-      <th>{{ field.label }}{{ field_section.id }}</th>
-      
-    
-      {% if field_section.id != current_section.id %}   
-      {% endif %}
 
-      {% assign current_section = field_section %}
+      {% assign field_value = customer.metafields[field.namespace][field.name] %}
+      {{ field_value.id }}
+      
+      <th>{{ field.label }}</th>
 
     {% endfor %}
   </tr>
