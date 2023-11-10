@@ -2,15 +2,21 @@
 
 {{ shop.metafields.acf_settings.customer }}
 
+
+{% for header in shop.metafields.acf_settings.customer.fields %} 
+  <h3>{{ header }}</h3>
+  <p>{{ shop.metafields.acf_settings.customer.fields[forloop.index0] }}</p>
+{% endfor %} 
+
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}
       {% assign field_value = customer.metafields[field.namespace][field.name] %}
+
         <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
 
-  
   <tr>
   {% for field in shop.metafields.acf_settings.customer.fields %}
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
