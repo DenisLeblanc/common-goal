@@ -11,8 +11,9 @@
   {% if field_section.id != current_section.id %}
     <h3>{{ field_section.label }}</h3>
   {% endif %}
+
   
-  <p>{{ field.label }}: {{ customer.metafields[field.namespace][field.name] }}</p>
+  <p>{{ field.label }}: {{ field_value }}</p>
 
   {% assign current_section = field_section %}
 
