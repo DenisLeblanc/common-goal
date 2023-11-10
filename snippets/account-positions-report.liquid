@@ -12,24 +12,25 @@
 
 
   <tr>
+    
+
+{% for item in customer.metafields.accentuate.coffee %}
+    <td>{{ item | replace: '-', ' ' }}</td>
+{% endfor %}
+{% for item in customer.metafields.accentuate.status %}
+    <td>{{ item }}</td>
+{% endfor %}
+{% for item in customer.metafields.accentuate.booked %}
+    <td>{{ item }}</td>
+{% endfor %}
+{% for item in customer.metafields.accentuate.balance %}
+    <td>{{ item }}</td>
+{% endfor %}
   </tr>
 
 </table>
 
 
-
-{% for item in customer.metafields.accentuate.coffee %}
-    <p>{{ item | replace: '-', ' ' }}</p>
-{% endfor %}
-{% for item in customer.metafields.accentuate.status %}
-    <p>{{ item }}</p>
-{% endfor %}
-{% for item in customer.metafields.accentuate.booked %}
-    <p>{{ item }}</p>
-{% endfor %}
-{% for item in customer.metafields.accentuate.balance %}
-    <p>{{ item }}</p>
-{% endfor %}
 
 
 
