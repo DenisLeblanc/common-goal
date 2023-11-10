@@ -3,7 +3,21 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% for header in customer.metafields.accentuate.position %} 
+{% assign fields = customer.metafields.position %}
+
+        {% for item in fields %}
+
+            {% assign i = forloop.index %}
+            
+            <div class="item item--{{ i }}">
+                {{ heading[i] }}
+                {{ content[i] }}
+            </div>
+            
+        {% endfor %}
+
+
+{% for header in customer.metafields.accentuate.coffee %} 
   <h3>{{ header }}</h3>
   <p>{{ product.metafields.accentuate.position[forloop.index0] }}</p>
 {% endfor %} 
