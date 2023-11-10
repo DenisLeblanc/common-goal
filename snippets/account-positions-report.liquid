@@ -3,7 +3,8 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% assign fields = shop.metafields.acf_settings.customer.metafields.position %}
+{% assign fields = customer.metafields.position %}
+{{ fields }}
 
         {% for item in fields %}
 
