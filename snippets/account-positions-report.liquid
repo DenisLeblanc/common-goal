@@ -3,22 +3,21 @@
 {{ shop.metafields.acf_settings.customer }}
 
 
-{% for header in shop.metafields.acf_settings.customer.fields %} 
+{% for header in product.metafields.accentuate.header %} 
   <h3>{{ header }}</h3>
-  <p>{{ shop.metafields.acf_settings.customer.fields[forloop.index0] }}</p>
+  <p>{{ product.metafields.accentuate.measurement[forloop.index0] }}</p>
 {% endfor %} 
 
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}
       {% assign field_value = customer.metafields[field.namespace][field.name] %}
-
         <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
 
   <tr>
-  {% for field in shop.metafields.acf_settings.customer.fields[forloop.index0] %}
+  {% for field in shop.metafields.acf_settings.customer.fields %}
     {% assign field_value = customer.metafields[field.namespace][field.name] %}
 
     {% for value in field_value %}
