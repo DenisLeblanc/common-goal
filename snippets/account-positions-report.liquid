@@ -3,6 +3,12 @@
 {% # shop.metafields.acf_settings.customer %}
 
 
+{% for value in product.metafields.namespace.key %}
+
+    {{value}}
+
+{% endfor %}
+
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}
