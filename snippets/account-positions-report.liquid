@@ -9,6 +9,7 @@
 {% for field in shop.metafields.acf_settings.customer.fields %}
 
   {% assign field_section = field.section %}
+  Section ID: {{ field_section.id }}
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
   {% assign i = forloop.index0 %}
 
@@ -17,7 +18,6 @@
     <p>{{ field.label }}: {{ field_value }}</p>
   {% endfor %}
 
-  Section ID: {{ field_section.id }}
   
   {% if field_section.id != current_section.id %}
 
