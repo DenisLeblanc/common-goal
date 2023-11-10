@@ -11,7 +11,7 @@
   {% if field_section.id != current_section.id %}
   <h3>{{ field_section.label }}</h3>
   {% endif %}
-  <p>{{ field.label.id }}: {{ field_value.id }}</p>
+  <p>{{ field.label }}: {{ field_value }}</p>
 
   {% assign current_section = field_section %}
 
