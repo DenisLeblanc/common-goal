@@ -5,22 +5,20 @@
 
 <table>
   <tr>
-    {% for field in shop.metafields.acf_settings.customer.fields %}
-
-      {% assign field_value = customer.metafields[field.namespace][field.name] %}
-      
+    {% for field in shop.metafields.acf_settings.customer.fields %}     
       <th>{{ field.label }}</th>
-
     {% endfor %}
   </tr>
 
-  {% for item in customer.metafields[item.namespace][item.name] %}
-
-    <tr>
-    yes!
+  <p>count sections</p>
+  <p>build table rows for each section</p>
+  <p>insert one cell per section of each field value</p>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
-
-  {% endfor %}
   
   
 </table>
