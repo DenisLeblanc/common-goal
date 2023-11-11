@@ -17,7 +17,7 @@
   {% for row in customer.metafields.position.coffee %}
     {% assign field_value = customer.metafields[row.namespace][row.name] | split: ", " %}
     <tr>
-      <td>{{ row.name }}</td>
+      <td>{{ row }}</td>
       <td>cell 2</td>
       <td>cell 3</td>
       <td>cell 4</td>
