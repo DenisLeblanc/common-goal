@@ -29,7 +29,7 @@
 
 
 
-{% for field in shop.metafields.acf_settings.customer.fields %}
+{% for field in shop.metafields.positions.customer.fields %}
 
   {% assign field_section = field.section %}
   Section ID: {{ field_section.id }}
@@ -65,6 +65,8 @@
     {% assign positions = customer.metafields.position.coffee.size %}
 
     Positions: {{ positions }}
+
+    
     
 
 {% for item in customer.metafields.position.coffee %}
