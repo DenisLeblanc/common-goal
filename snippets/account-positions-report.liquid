@@ -17,11 +17,13 @@
   {% for position in customer.metafields.position.coffee %}
     {% assign i = forloop.index0 %}
     {% assign position_status = customer.metafields.position.status[i] %}
+    {% assign position_booked = customer.metafields.position.booked[i] %}
+    {% assign position_balance = customer.metafields.position.booked[i] %}
     <tr>
       <td>{{ position }}</td>
       <td>{{ position_status }}</td>
-      <td>cell 3</td>
-      <td>cell 4</td>
+      <td>{{ position_booked }}</td>
+      <td>{{ position_balance }}</td>
     </tr>
   {% endfor %}
   
