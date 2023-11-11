@@ -12,7 +12,13 @@
     {% assign position_status = customer.metafields.position.status[i] %}
     {% assign position_booked = customer.metafields.position.booked[i] %}
     {% assign position_balance = customer.metafields.position.balance[i] %}
-    
+    {% assign words = "Hi, how are you today?" | split: ' ' %}
+
+{% capture titlecase %}
+  {% for word in words %}
+    {{ word | capitalize }}
+  {% endfor %}{% endcapture %}
+{{ titlecase }}
     <tr>
       <td>{{ position | replace: '-', ' ' }}</td>
       <td>{{ position_status }}</td>
