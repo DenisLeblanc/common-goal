@@ -29,74 +29,7 @@
   
 </table>
 
-{% assign field = shop.metafields.acf_settings.customer.fields | where: "name", "size" | first %}
-<p>{{ field.label }}: {{ product.metafields.accentuate.size }}</p>
 
-<p>count sections</p>
-  <p>build table rows for each section</p>
-  <p>insert one cell per section of each field value</p>
-
-  
-  
-
-
-
-
-
-{% for position in customer.metafields.position.coffee %}
-
-  Section ID: {{ position }}
-  {% assign field_value = customer.metafields[field.namespace][field.name] %}
-  {% assign i = forloop.index0 %}
-
-  {% for section in field_section %}
-    {{ i }}
-    <p>{{ field.label }}: {{ field_value }}</p>
-  {% endfor %}
-
-  
-  {% if field_section.id != current_section.id %}
-
-  {% endif %}
-
-
-  {% assign current_section = field_section %}
-
-{% endfor %}
-
-<table>
-  <tr>
-    {% for field in shop.metafields.acf_settings.customer.fields %}
-        <th>{{ field.label }}</th>
-    {% endfor %}
-  </tr>
-
-
-  <tr>
-    Positions: {{ customer.metafields.position.coffee.size }}
-
-    {% assign positions = customer.metafields.position.coffee.size %}
-
-    Positions: {{ positions }}
-
-    
-    
-
-{% for item in customer.metafields.position.coffee %}
-    <td>{{ item | replace: '-', ' ' }}</td>
-{% endfor %}
-{% for item in customer.metafields.position.status %}
-    <td>{{ item }}</td>
-{% endfor %}
-{% for item in customer.metafields.position.booked %}
-    <td>{{ item }}</td>
-{% endfor %}
-{% for item in customer.metafields.position.balance %}
-    <td>{{ item }}</td>
-{% endfor %}
-  </tr>
-
-</table>
 
 
 
