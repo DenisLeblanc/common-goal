@@ -2,6 +2,9 @@
 
 {{ shop.metafields.acf_settings.customer }}
 
+{% assign field = shop.metafields.acf_settings.product.fields | where: "name", "size" | first %}
+<p>{{ field.label }}: {{ product.metafields.accentuate.size }}</p>
+
 <p>count sections</p>
   <p>build table rows for each section</p>
   <p>insert one cell per section of each field value</p>
