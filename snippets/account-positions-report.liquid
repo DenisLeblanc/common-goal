@@ -15,7 +15,7 @@
     
     {% assign words = position | split: '-' %}
 
-{% capture titlecase %}
+{% capture position %}
   {% for word in words %}
     {{ word | capitalize }}
   {% endfor %}
@@ -23,7 +23,7 @@
 
     
     <tr>
-      <td>{{ titlecase }}</td>
+      <td>{{ position }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
