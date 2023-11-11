@@ -18,9 +18,9 @@
       {% for word in words %}
         {{ word | capitalize }}
       {% endfor %}{% endcapture %}
-    {{ titlecase }}
+    
     <tr>
-      <td>{{ words }}</td>
+      <td>{{ titlecase }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
