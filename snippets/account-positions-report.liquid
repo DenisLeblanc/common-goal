@@ -2,15 +2,8 @@
 
 {{ shop.metafields.acf_settings.customer.fields }}
 
-{% assign field = shop.metafields.acf_settings.customer.fields | where: "name", "size" | first %}
-<p>{{ field.label }}: {{ product.metafields.accentuate.size }}</p>
+{{ customer.metafields.position }}
 
-<p>count sections</p>
-  <p>build table rows for each section</p>
-  <p>insert one cell per section of each field value</p>
-
-  
-  
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}   
@@ -29,6 +22,17 @@
   
   
 </table>
+
+{% assign field = shop.metafields.acf_settings.customer.fields | where: "name", "size" | first %}
+<p>{{ field.label }}: {{ product.metafields.accentuate.size }}</p>
+
+<p>count sections</p>
+  <p>build table rows for each section</p>
+  <p>insert one cell per section of each field value</p>
+
+  
+  
+
 
 
 
