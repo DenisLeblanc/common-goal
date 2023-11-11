@@ -60,7 +60,7 @@
 
 
   <tr>
-    
+    {{ customer.metafields.position }}
 
 {% for item in customer.metafields.position.coffee %}
     <td>{{ item | replace: '-', ' ' }}</td>
