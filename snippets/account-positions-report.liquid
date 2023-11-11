@@ -6,13 +6,13 @@
   <p>build table rows for each section</p>
   <p>insert one cell per section of each field value</p>
 
-  {% assign field_value = customer.metafields[field.namespace][field.name] | split: ", " %}
-      {{ field_value.size }}
+  
   
 <table>
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}   
-    
+    {% assign field_value = customer.metafields[field.namespace][field.name] | split: ", " %}
+      {{ field_value.size }}
       <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
