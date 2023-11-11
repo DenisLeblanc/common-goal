@@ -1,11 +1,11 @@
 <h2>Positions Report</h2>
 
-{{ shop.metafields.acf_settings.customer.fields }}
+{{ shop.metafields.acf_settings.customer.fields  | split: ", "}}
 <br /><br />
 {{ customer.metafields.position }}
 <br /><br />
 {% for field in shop.metafields.acf_settings.customer.fields %} 
-  {{ field | split "<br />"}}<br /><br />
+  {{ field }}
 {% endfor %}
 
 <table>
