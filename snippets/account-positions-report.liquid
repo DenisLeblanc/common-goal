@@ -14,11 +14,11 @@
     {% endfor %}
   </tr>
 
-  {% for row in customer.metafields.position.coffee %}
-    {% assign field_value = customer.metafields[row.namespace][row.name] | split: ", " %}
+  {% for position in customer.metafields.position.coffee %}
+    {% assign position_status = customer.metafields[position.namespace][position.name] | split: ", " %}
     <tr>
-      <td>{{ row }}</td>
-      <td>cell 2</td>
+      <td>{{ position }}</td>
+      <td>{{ position_status }}</td>
       <td>cell 3</td>
       <td>cell 4</td>
     </tr>
