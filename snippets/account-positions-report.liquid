@@ -4,9 +4,7 @@
 <br /><br />
 {{ customer.metafields.position.coffee }}
 <br /><br />
-{% for field in shop.metafields.acf_settings.customer.fields %} 
-  {{ field.label }}<br /><br />
-{% endfor %}
+
 
 <table>
   <tr>
@@ -17,12 +15,16 @@
     {% endfor %}
   </tr>
 
-  <tr>
-    <td>value</td>
-    <td>value</td>
-    <td>value</td>
-    <td>value</td>
-  </tr>
+  {% for row in customer.metafields.position.coffee %}
+    <tr>
+      <td>value</td>
+      <td>value</td>
+      <td>value</td>
+      <td>value</td>
+    </tr>
+  {% endfor %}
+  
+  
   
   
 </table>
