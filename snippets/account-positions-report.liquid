@@ -8,22 +8,19 @@
   </tr>
 
   {% for position in customer.metafields.position.coffee %}
+    {% assign words = position | split: '-' %}
     {% assign i = forloop.index0 %}
     {% assign position_status = customer.metafields.position.status[i] %}
     {% assign position_booked = customer.metafields.position.booked[i] %}
-    {% assign position_balance = customer.metafields.position.balance[i] %}
-    
-    {% assign words = position | split: '-' %}
+    {% assign position_balance = customer.metafields.position.balance[i] %}  
+    {% capture titlecase_position %}
+      {% for word in words %}
+        {{ word | capitalize }}
+      {% endfor %}
+    {% endcapture %}
 
-{% capture position %}
-  {% for word in words %}
-    {{ word | capitalize }}
-  {% endfor %}
-{% endcapture %}
-
-    
     <tr>
-      <td>{{ position }}</td>
+      <td>{{ titlecase_position }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
