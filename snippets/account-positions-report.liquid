@@ -62,6 +62,8 @@
   <tr>
     Positions: {{ customer.metafields.position.coffee.size }}
 
+    {% assign positions = customer.metafields.position.coffee.size %}
+
 {% for item in customer.metafields.position.coffee %}
     <td>{{ item | replace: '-', ' ' }}</td>
 {% endfor %}
