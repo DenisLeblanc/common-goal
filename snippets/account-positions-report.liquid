@@ -2,7 +2,11 @@
 
 {{ shop.metafields.acf_settings.customer.fields }}
 
+{{ customer.metafields.position }}
 
+{% for field in shop.metafields.acf_settings.customer.fields %} 
+  {{ field }}
+{% endfor %}
 
 <table>
   <tr>
