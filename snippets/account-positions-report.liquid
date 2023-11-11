@@ -13,10 +13,10 @@
     {% assign position_booked = customer.metafields.position.booked[i] %}
     {% assign position_balance = customer.metafields.position.balance[i] %}
     
-    {% assign position = "Hi, how are you today?" | split: '-' %}
+    {% assign words = position | split: '-' %}
 
 {% capture titlecase %}
-  {% for word in position %}
+  {% for word in words %}
     {{ word | capitalize }}
   {% endfor %}
 {% endcapture %}
