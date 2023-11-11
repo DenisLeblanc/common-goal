@@ -8,6 +8,7 @@
   </tr>
 
   {% for position in customer.metafields.position.coffee %}
+    {{ position.field }}
     {% assign i = forloop.index0 %}
     {% assign position_status = customer.metafields.position.status[i] %}
     {% assign position_booked = customer.metafields.position.booked[i] %}
