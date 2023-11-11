@@ -12,15 +12,10 @@
     {% assign position_status = customer.metafields.position.status[i] %}
     {% assign position_booked = customer.metafields.position.booked[i] %}
     {% assign position_balance = customer.metafields.position.balance[i] %}
-    {% assign words = position | split: ' ' %}
-
-    {% capture titlecase %}
-      {% for word in words %}
-        {{ word | capitalize }}
-      {% endfor %}{% endcapture %}
+    {% assign position = position | replace: '-', ' ' %}
     
     <tr>
-      <td>{{ titlecase }}</td>
+      <td>{{ position | camelize }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
