@@ -10,12 +10,12 @@
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}   
     {% assign field_value = customer.metafields[field.namespace][field.name] | split: ", " %}
-      <th>{{ field_value[2] }}</th>
+      <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
 
   {% for row in customer.metafields.position.coffee %}
-    
+
     <tr>
       <td>cell 1</td>
       <td>cell 2</td>
