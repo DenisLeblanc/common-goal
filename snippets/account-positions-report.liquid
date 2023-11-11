@@ -1,6 +1,6 @@
 <h2>Positions Report</h2>
 
-{{ shop.metafields.acf_settings.customer.fields }}
+{{ shop.metafields.acf_settings.customer.fields.size }}
 
 {% assign field = shop.metafields.acf_settings.customer.fields | where: "name", "size" | first %}
 <p>{{ field.label }}: {{ product.metafields.accentuate.size }}</p>
