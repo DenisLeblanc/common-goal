@@ -18,7 +18,7 @@
     {% assign i = forloop.index0 %}
     {% assign position_status = customer.metafields.position.status[i] %}
     {% assign position_booked = customer.metafields.position.booked[i] %}
-    {% assign position_balance = customer.metafields.position.booked[i] %}
+    {% assign position_balance = customer.metafields.position.balance[i] %}
     <tr>
       <td>{{ position }}</td>
       <td>{{ position_status }}</td>
