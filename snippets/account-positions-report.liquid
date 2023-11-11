@@ -14,7 +14,7 @@
     {% assign position_booked = customer.metafields.position.booked[i] %}
     {% assign position_balance = customer.metafields.position.balance[i] %}
     <tr>
-      <td>{{ position | replace: '-', ' ' }}</td>
+      <td>{{ position.name }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
