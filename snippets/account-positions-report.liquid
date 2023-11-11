@@ -35,7 +35,7 @@
 
 {% for position in customer.metafields.position.coffee %}
 
-  Section ID: {{ field }}
+  Section ID: {{ position }}
   {% assign field_value = customer.metafields[field.namespace][field.name] %}
   {% assign i = forloop.index0 %}
 
