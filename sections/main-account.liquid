@@ -15,7 +15,8 @@
 {%- endstyle -%}
 
 <div class="customer account section-{{ section.id }}-padding">
-  <div>
+  
+  <div class="customer_logout_wrap">
     <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
     <a href="{{ routes.account_logout_url }}">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 18 19">
@@ -23,9 +24,10 @@
       </svg>
       {{ 'customer.log_out' | t }}
     </a>
-  </div>
+  </div><!-- customer_logout_wrap -->
 
   <div>
+    
     <div class="main-account-wrap">
       {% include 'account-positions-report' %}
       {% include 'account-customer-orders' %}
