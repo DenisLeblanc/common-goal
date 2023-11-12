@@ -1,9 +1,13 @@
 <h2>Positions Report</h2>
 
 <table>
-{% tablerow field in shop.metafields.acf_settings.customer.fields %}
-  {{ field.label }}
-{% endtablerow %}
+  {% tablerow field in shop.metafields.acf_settings.customer.fields %}
+    {{ field.label }}
+  {% endtablerow %}
+
+  {% for field in shop.metafields.acf_settings.customer.fields %}   
+    <th>{{ field.name }}</th>
+  {% endfor %}
 
 
   
