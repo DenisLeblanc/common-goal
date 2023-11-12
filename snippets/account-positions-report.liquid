@@ -14,6 +14,7 @@
           {% assign col_value = customer.metafields.position[col_name] %}
           {% if col_name == coffee %}
           {% else %}
+            {{ col_name }}
             <td>{{ col_value[i] }}</td>
           {% endif %}
         {% endfor %}
