@@ -7,13 +7,6 @@
     {% endfor %}
   </tr>
 
-{% assign fields = shop.metafields.acf_settings.customer.fields %}
-{{ fields.name }}
-  
-{% for field in shop.metafields.acf_settings.customer.fields %}
-  {% assign array = field.name %}
-  <p>{{ field.name }}</p>
-{% endfor %}
   
   {% for position in customer.metafields.position.coffee %}
     {% assign i = forloop.index0 %}
