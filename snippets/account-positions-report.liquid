@@ -14,7 +14,7 @@
             {% assign coffees = customer.metafields.position[col_name] %}
             
             {% assign coffee =  coffees[i] %}
-            {{ coffees }}
+            {{ coffee }}
             {% assign col_value = all_products[coffee].title %}
           {% else %}
             {% assign col_value = customer.metafields.position[col_name] %}
