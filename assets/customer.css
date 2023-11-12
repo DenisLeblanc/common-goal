@@ -755,6 +755,6 @@ li[data-address] > h2 {
 }
 
 /* Customer Positions Report */
-table.customer_positions_report {
+.account_wrap {
   margin-bottom: 6rem;
 }
