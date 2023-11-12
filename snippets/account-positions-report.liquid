@@ -10,6 +10,7 @@
       <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
           {% assign col_name = field.name %}
+          {{ col_name }}
           {% if col_name == 'position' %}
             {% assign col_value = all_products[position].title %}
           {% else %}
