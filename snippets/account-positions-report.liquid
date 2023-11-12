@@ -9,7 +9,7 @@
  
 {% for field in shop.metafields.acf_settings.customer %}
   {% assign field_name = customer.metafields[field.namespace][field.name] %}
-  <p>{{ field.label }}: {{ field_name }}</p>
+  <p>{{ field.label }}: {{ field.name }}</p>
 {% endfor %}
   
   {% for position in customer.metafields.position.coffee %}
