@@ -4,7 +4,7 @@
   <tr>
     {% for field in shop.metafields.acf_settings.customer.fields %}   
       <th>{{ field.label }}</th>
-      {% assign variable = field  %}
+      {% assign variable = field.name  %}
     {% endfor %}
   </tr>
  {{ variable }}
