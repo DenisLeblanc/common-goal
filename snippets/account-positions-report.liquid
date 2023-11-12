@@ -21,6 +21,9 @@
     {% endcapture %}
 
     <tr>
+      {% for field in shop.metafields.acf_settings.customer.fields %} 
+        <td>{{ field.label }}</td>
+      {% endfor %}
       <td>{{ all_products[position].title }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
