@@ -17,6 +17,7 @@
     {% assign position_booked = customer.metafields.position.booked[i] %}
     {% assign position_balance = customer.metafields.position.balance[i] %} 
     {% assign position_price = customer.metafields.position.price[i] %}
+    {% assign position_currency = customer.metafields.position.currency[i] %}
     <tr>
       <td>{{ position_contract }}</td>
       <td>{{ position_start_date }}</td>
@@ -25,7 +26,7 @@
       <td>{{ position_status }}</td>     
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td> 
-      <td>${{ position_price }}</td>
+      <td>${{ position_price }}{{ position_currency }}</td>
     </tr>
   {% endfor %}
 </table>
