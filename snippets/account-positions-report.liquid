@@ -13,6 +13,7 @@
           {% assign col_name = field.name %}
           {% assign col_value = customer.metafields.position[col_name] %}
           {% if col_name == 'coffee' %}
+            <td>{{ coffee }}</td>
           {% else %}
             {{ col_name }}
             <td>{{ col_value[i] }}</td>
