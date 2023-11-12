@@ -20,13 +20,13 @@
     {% endcapture %}
 
     <tr>
-      <td>{{ product.position.url }}</td>
+      <td>{{ titlecase_position }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
     </tr>
 
-    {{ product['santa-clara'].url }}
+    {{ all_products['santa-clara'].url }}
   {% endfor %}
   
 </table>
