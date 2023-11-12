@@ -22,7 +22,7 @@
 
     <tr>
       {% for field in shop.metafields.acf_settings.customer.fields %} 
-        <td>{{ customer.metafields.position.field.value[i] }}</td>
+        <td>{{ customer.metafields.position.field.value }}</td>
       {% endfor %}
       <td>{{ all_products[position].title }}</td>
       <td>{{ position_status }}</td>
