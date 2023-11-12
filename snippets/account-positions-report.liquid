@@ -8,7 +8,7 @@
     {% for position in customer.metafields.position.coffee %}
       <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
-          {% assign col = field %}
+          {% assign col = field.name %}
           <td>{{ col }}</td>
         {% endfor %}
       </tr>
