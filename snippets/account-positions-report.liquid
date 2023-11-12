@@ -17,37 +17,8 @@
           {% else %}
             <td>{{ col_value[i] }}</td>
           {% endif %}
-        {% endfor %} 
+        {% endfor %}
       </tr>
     {% endfor %}
-  
-      
- 
-
-
-  
-  {% for position in customer.metafields.position.coffee %}
-    {% assign i = forloop.index0 %}
-    {% assign position_contract = customer.metafields.position.contract[i] %}
-    {% assign position_start_date = customer.metafields.position.start_date[i] %}
-    {% assign position_end_date = customer.metafields.position.end_date[i] %}
-    {% assign position_coffee = all_products[position].title %}
-    {% assign position_status = customer.metafields.position.status[i] %}
-    {% assign position_booked = customer.metafields.position.booked[i] %}
-    {% assign position_balance = customer.metafields.position.balance[i] %} 
-    {% assign position_currency = customer.metafields.position.currency[i] %}
-    {% assign position_price = customer.metafields.position.price[i] %}
-    <tr>
-      <td>{{ position_contract }}</td>
-      <td>{{ position_start_date }}</td>
-      <td>{{ position_end_date }}</td> 
-      <td>{{ position_coffee }}</td>
-      <td>{{ position_status }}</td>     
-      <td>{{ position_booked }}</td>
-      <td>{{ position_balance }}</td> 
-      <td>{{ position_currency }}</td>
-      <td>${{ position_price }}</td>
-    </tr>
-  {% endfor %}
   
 </table>
