@@ -7,7 +7,7 @@
     {% endfor %}
   </tr>
 
-{% assign fields = customer.metafields %}
+{% assign fields = shop.metafields.acf_settings.customer.fields %}
 {{ fields.name }}
   
 {% for field in shop.metafields.acf_settings.customer.fields %}
