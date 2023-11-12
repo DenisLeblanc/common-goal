@@ -6,9 +6,9 @@
   {% endtablerow %}
 
   {% for field in shop.metafields.acf_settings.customer.fields %}
-    {% increment i %}
 
     {% assign field_value = customer.metafields.position[field.name] %}
+    
     <td>{{ field_value }}</td>
   {% endfor %}
       
