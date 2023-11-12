@@ -11,8 +11,8 @@
         {% for field in shop.metafields.acf_settings.customer.fields %}
           {% assign col_name = field.name %}
           {% if col_name == 'coffee' %}
-            {% assign col_value = customer.metafields.position[col_name] %}
-            {% assign col_value = all_products[col_value].title %}
+            {% assign coffee = customer.metafields.position[col_name] %}
+            {% assign col_value = all_products[coffee].title %}
           {% else %}
             {% assign col_value = customer.metafields.position[col_name] %}
           {% endif %}
