@@ -5,14 +5,16 @@
     {{ field.label }}
   {% endtablerow %}
 
+  {% for field in shop.metafields.acf_settings.customer.fields %}
+    {% increment i %}
+    {{ i }}
+    {% assign field_value = customer.metafields.position[field.name] %}
+    <td>{{ field_value[i] }}</td>
+  {% endfor %}
+      
   {% for position in customer.metafields.position.coffee %}
     <tr>
-      {% for field in shop.metafields.acf_settings.customer.fields %}
-        {% increment i %}
-        {{ i }}
-        {% assign field_value = customer.metafields.position[field.name] %}
-        <td>{{ field_value[i] }}</td>
-      {% endfor %}
+      
     </tr>
   {% endfor %}
 
