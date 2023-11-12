@@ -8,7 +8,7 @@
   </tr>
 
   {% for position in customer.metafields.position.coffee %}
-    {{ all_products[position].title }}
+    
     {% assign words = position | split: '-' %}
     {% assign i = forloop.index0 %}
     {% assign position_status = customer.metafields.position.status[i] %}
@@ -21,7 +21,7 @@
     {% endcapture %}
 
     <tr>
-      <td>{{ titlecase_position }}</td>
+      <td>{{ all_products[position].title }}</td>
       <td>{{ position_status }}</td>
       <td>{{ position_booked }}</td>
       <td>{{ position_balance }}</td>
