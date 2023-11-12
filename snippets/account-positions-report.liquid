@@ -6,7 +6,12 @@
       <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
- {{ shop.metafields.acf_settings.customer | where: "name" }}
+ 
+{% for field in shop.metafields.acf_settings.customer.fields %}
+  {% assign field_name = product.metafields[field.namespace][field.name] %}
+  <p>{{ field.label }}: {{ field_name }}</p>
+{% endfor %}
+  
   {% for position in customer.metafields.position.coffee %}
     {% assign i = forloop.index0 %}
     {% assign position_contract = customer.metafields.position.contract[i] %}
