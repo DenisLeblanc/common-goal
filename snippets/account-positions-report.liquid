@@ -8,7 +8,7 @@
   </tr>
 
   {% for position in customer.metafields.position.coffee %}
-    {{ all_products.position.title }}
+    {{ all_products[position].title }}
     {% assign words = position | split: '-' %}
     {% assign i = forloop.index0 %}
     {% assign position_status = customer.metafields.position.status[i] %}
