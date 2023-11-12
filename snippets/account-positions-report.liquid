@@ -6,7 +6,7 @@
       <th>{{ field.label }}</th>
     {% endfor %}
   </tr>
-{% if customer.metafields.position.balance < 1 %} 
+ 
   {% for position in customer.metafields.position.coffee %}
     {% assign i = forloop.index0 %}
     {% assign position_contract = customer.metafields.position.contract[i] %}
@@ -18,7 +18,7 @@
     {% assign position_balance = customer.metafields.position.balance[i] %} 
     {% assign position_currency = customer.metafields.position.currency[i] %}
     {% assign position_price = customer.metafields.position.price[i] %}
-    
+    {% if position_balance < 1 %}
     <tr>
       <td>{{ position_contract }}</td>
       <td>{{ position_start_date }}</td>
@@ -30,7 +30,7 @@
       <td>{{ position_currency }}</td>
       <td>${{ position_price }}</td>
     </tr>
-    
+    {% endif %}
   {% endfor %}
-  {% endif %}
+  
 </table>
