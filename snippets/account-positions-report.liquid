@@ -5,10 +5,10 @@
     {% for field in shop.metafields.acf_settings.customer.fields %}   
       <th>{{ field.label }}</th>
       {% assign name = field.name %}
-      {% assign array = name | concat: field:name %}
+      {% assign names = name | concat: field:name %}
     {% endfor %}
   </tr>
- {{ array }}
+ {{ names }}
   {% for position in customer.metafields.position.coffee %}
     {% assign i = forloop.index0 %}
     {% assign position_contract = customer.metafields.position.contract[i] %}
