@@ -5,13 +5,13 @@
     {{ field.label }}
   {% endtablerow %}
 
-    {% tablerow position in customer.metafields.position.coffee %}
-
+    {% for position in customer.metafields.position.coffee %}
+      <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
           <td>{{ customer.metafields.position }}</td>
         {% endfor %}
-      
-    {% endtablerow %}
+      </tr>
+    {% endfor %}
   
       
 
