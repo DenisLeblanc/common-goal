@@ -7,10 +7,11 @@
 
   {% for position in customer.metafields.position.coffee %}
     {% assign i = forloop.index0 %}
-    
+    {% assign field_value = customer.metafields.position[field.name] %}
+    {{ field_value[i] }}
     <tr>
   {% for field in shop.metafields.acf_settings.customer.fields %}   
-    <td>{{ customer.metafields.position.field.name }}</td>
+    <td>{{  }}</td>
   {% endfor %}
     </tr>
   {% endfor %}
