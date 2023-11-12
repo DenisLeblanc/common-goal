@@ -18,6 +18,7 @@
     {% assign position_balance = customer.metafields.position.balance[i] %} 
     {% assign position_currency = customer.metafields.position.currency[i] %}
     {% assign position_price = customer.metafields.position.price[i] %}
+    {% if position_balance != 0 %}
     <tr>
       <td>{{ position_contract }}</td>
       <td>{{ position_start_date }}</td>
@@ -29,5 +30,6 @@
       <td>{{ position_currency }}</td>
       <td>${{ position_price }}</td>
     </tr>
+    {% endif %}
   {% endfor %}
 </table>
