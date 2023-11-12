@@ -9,7 +9,7 @@
     {% increment i %}
 
     {% assign field_value = customer.metafields.position[field.name] %}
-    <td>{{ field_value[i] }}</td>
+    <td>{{ field_value }}</td>
   {% endfor %}
       
   {% for position in customer.metafields.position.coffee %}
