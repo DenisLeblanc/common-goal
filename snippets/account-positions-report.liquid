@@ -12,6 +12,7 @@
           {% assign col_name = field.name %}
           {% if col_name == 'coffee' %}
             {% assign coffees = customer.metafields.position[col_name] %}
+            {{ coffees }}
             {% assign coffee =  coffees[i] %}
             {% assign col_value = all_products[coffee].title %}
           {% else %}
