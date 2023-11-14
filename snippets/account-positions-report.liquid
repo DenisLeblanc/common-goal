@@ -5,18 +5,7 @@
     {{ field.label }}
   {% endtablerow %}
   {% for position in customer.metafields.position.coffee %}
-    {% assign coffee = all_products[position].title %}
-
-    {% if all_products[position].variants.first.inventory_management == "shopify" %}
-      {% if all_products[position].variants.first.inventory_quantity > 0 %}
-        {{ coffee }} : <span class="devStock">{{ all_products[position].variants.first.inventory_quantity }}</span>, 
-      {% else %}
-        The product is out of stock
-      {% endif %}
-    {% else %}
-      This product is available
-   {% endif %}
-    
+    {% assign coffee = all_products[position].title %}    
     {% assign i = forloop.index0 %}
     <tr>
       {% for field in shop.metafields.acf_settings.customer.fields %}
