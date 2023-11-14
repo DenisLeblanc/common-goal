@@ -9,8 +9,7 @@
       {% assign coffee = all_products[position].title %}
       {% assign inventory = all_products[position].available
  %}
-      {{ inventory[inventory_quantity]
- }}
+      {{ inventory }}
       {% assign i = forloop.index0 %}
       <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
