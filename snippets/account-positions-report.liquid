@@ -7,7 +7,7 @@
 
     {% for position in customer.metafields.position.coffee %}
       {% assign coffee = all_products[position].title %}
-      {% assign inventory = all_products[position].url %}
+      {% assign inventory = all_products[position].available %}
       {{ inventory }}
       {% assign i = forloop.index0 %}
       <tr>
