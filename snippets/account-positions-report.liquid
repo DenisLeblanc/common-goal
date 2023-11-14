@@ -9,13 +9,13 @@
 
     {% if all_products[position].variants.first.inventory_management == "shopify" %}
       {% if all_products[position].variants.first.inventory_quantity > 0 %}
-  Only <span class="devStock">{{ all_products[position].variants.first.inventory_quantity }}</span> left!
+        {{ coffee }} : <span class="devStock">{{ all_products[position].variants.first.inventory_quantity }}</span>, 
+      {% else %}
+        The product is out of stock
+      {% endif %}
     {% else %}
-       The product is out of stock
-    {% endif %}
-  {% else %}
-    This product is available
- {% endif %}
+      This product is available
+   {% endif %}
     
     {% assign i = forloop.index0 %}
     <tr>
