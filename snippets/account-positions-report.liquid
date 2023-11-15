@@ -6,7 +6,7 @@
     <li>Order name: {{ order.name }}</li>
     <li>Order Date: {{ order.created_at | time_tag: format: 'date' }}</li>
     <li>Order Line items: {% for item in order.line_items %}{{ item.title }}{% endfor %}</li>
-    <li>Quantity: {{ line_item.quantity }}</li>
+    <li>Quantity: {{ order.line_item.quantity }}</li>
   </ul>
 {% endfor %}
 
