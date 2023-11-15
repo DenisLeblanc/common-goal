@@ -11,7 +11,7 @@
           {% assign fulfilled_qty = item.fulfillment.fulfillment_line_items %}
         {%- endif -%}
       {% endfor %}
-    <li>Fulfilled: {{ fulfilled_qty.quantity }}</li>
+    <li>Fulfilled: {{ fulfilled_qty[quantity] }}</li>
     <li>Quantity: {% for qty in order.line_items %}{{ qty.quantity }}{% endfor %}</li>
   </ul>
 {% endfor %}
