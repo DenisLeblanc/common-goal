@@ -8,12 +8,9 @@
     <li>Order Line items: {% for item in order.line_items %}{{ item.title }}{% endfor %}</li>
       {% for item in order.line_items %}
         {%- if item.fulfillment -%}
-          {% assign fulfilled = item.fulfillment.fulfillment_line_items[0].quantity %}
-          {% if fulfilled >= 0 %}
-            {% assign fulfilled_qty = fulfilled %}
-          {% else %}
-            {% assign fulfilled_qty = 0 %}
-          {% endif %}
+          {% assign fulfilled_qty = item.fulfillment.fulfillment_line_items[0].quantity %}
+        {% else %}
+          {% assign fulfilled_qty = '0' %}
         {%- endif -%}
       {% endfor %}
     <li>Fulfilled: {{ fulfilled_qty }}</li>
