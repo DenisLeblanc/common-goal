@@ -12,7 +12,7 @@
           {% if fulfilled >= 0 %}
             {% assign fulfilled_qty = fulfilled %}
           {% else %}
-            {% assign fulfilled_qty = '0' %}
+            {% assign fulfilled_qty = 0 %}
           {% endif %}
         {%- endif -%}
       {% endfor %}
