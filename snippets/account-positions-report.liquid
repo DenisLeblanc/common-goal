@@ -8,11 +8,10 @@
     <li>Order Line items: {% for item in order.line_items %}{{ item.title }}{% endfor %}</li>
       {% for item in order.line_items %}
         {%- if item.fulfillment -%}
-          {% assign fulfilled_qty = item.fulfillment_line_items[quantity] %}
-          <li>Fulfilled: {{ fulfilled_qty }}</li>
+          {% assign fulfilled_qty = item.fulfillment_line_items.quantity %}
         {%- endif -%}
       {% endfor %}
-    
+    <li>Fulfilled: {{ fulfilled_qty }}</li>
     <li>Quantity: {% for qty in order.line_items %}{{ qty.quantity }}{% endfor %}</li>
   </ul>
 {% endfor %}
