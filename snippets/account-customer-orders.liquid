@@ -18,7 +18,7 @@
               </tr>
             </thead>
             <tbody role="rowgroup">
-              {%- for order in customer.orders.line_items -%}
+              {%- for order in customer.orders[line_items] -%}
                 <tr role="row">
                   <td
                     id="RowOrder"
