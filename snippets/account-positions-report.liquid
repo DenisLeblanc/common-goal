@@ -1,4 +1,12 @@
-{{ customer.orders.line_items }}
+
+{% for order in customer.orders %}
+  <ul>
+    <li>Order Number: {{ 'customer.orders.order_number' | t }}</li>
+    <li>Order URL: {{ order.customer_url }}</li>
+    <li>Order name: {{ order.name }}</li>
+    <li>Order Date: {{ order.created_at | time_tag: format: 'date' }}</li>
+  </ul>
+{% endfor %}
 
 <h2>Positions Report</h2>
 
