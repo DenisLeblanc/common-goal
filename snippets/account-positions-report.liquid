@@ -8,6 +8,27 @@
     <li>Order Line items: {% for item in order.line_items %}{{ item.title }}{% endfor %}</li>
     <li>Quantity: {% for qty in order.line_items %}{{ qty.quantity }}{% endfor %}</li>
   </ul>
+  {% for item in order.line_items %}
+  {%- if line_item.fulfillment -%}
+    <div class="fulfillment">
+      {%- assign created_at = line_item.fulfillment.created_at | time_tag: format: 'date' -%}
+      <span>{{ 'customer.order.fulfilled_at_html' | t: date: created_at }}</span>
+
+      {%- if line_item.fulfillment.tracking_url -%}
+        <a href="{{ line_item.fulfillment.tracking_url }}">
+          {{ 'customer.order.track_shipment' | t }}
+        </a>
+      {%- endif -%}
+      <span>
+        {{ line_item.fulfillment.tracking_company }}
+        {%- if line_item.fulfillment.tracking_number -%}
+          #{{ line_item.fulfillment.tracking_number }}
+        {%- endif -%}
+      </span>
+    </div>
+  {%- endif -%}
+  {% endfor %}
+  
 {% endfor %}
 
 <h2>Positions Report</h2>
