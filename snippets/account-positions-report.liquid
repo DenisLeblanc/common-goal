@@ -5,7 +5,7 @@
     <li>Order URL: {{ order.customer_url }}</li>
     <li>Order name: {{ order.name }}</li>
     <li>Order Date: {{ order.created_at | time_tag: format: 'date' }}</li>
-    <li>Order Line items: {{ order.line_items }}</li>
+    <li>Order Line items: {% for item in order.line_items %}{{ item.name }}{% endfor %}</li>
   </ul>
 {% endfor %}
 
