@@ -1420,6 +1420,7 @@
         "type": "checkbox",
         "id": "account_show_positions_report",
         "label": "t:settings_schema.account.settings.account_show_positions_report.label",
+        "info": "t:settings_schema.account.settings.account_show_positions_report.info",
         "default": true
       }
     ]
