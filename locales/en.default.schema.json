@@ -223,10 +223,23 @@
       "name": "Drawers"
     },
     "animations": {
-      "name": "Account",
+      "name": "Animations",
       "settings": {
-        "account_show_positions_report": {
-          "label": "Show Positions Report"
+        "animations_reveal_on_scroll": {
+          "label": "Reveal sections on scroll"
+        },
+        "animations_hover_elements": {
+          "options__1": {
+            "label": "None"
+          },
+          "options__2": {
+            "label": "Vertical lift"
+          },
+          "options__3": {
+            "label": "3D lift"
+          },
+          "label": "Hover effect",
+          "info": "Affects cards and buttons."
         }
       }
     },
@@ -300,6 +313,14 @@
         "paragraph": "Cart and checkout prices always show currency codes. Example: $1.00 USD.",
         "currency_code_enabled": {
           "label": "Show currency codes"
+        }
+      }
+    },
+    "account": {
+      "name": "Account",
+      "settings": {
+        "account_show_positions_report": {
+          "label": "Show Positions Report"
         }
       }
     },
