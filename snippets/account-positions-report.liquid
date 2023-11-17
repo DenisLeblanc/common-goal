@@ -18,25 +18,27 @@
   </ul>
 {% endfor %}
 
-<h2>Positions Report</h2>
-
-<table>
-  {% tablerow field in shop.metafields.acf_settings.customer.fields %}
-    {{ field.label }}
-  {% endtablerow %}
-  {% for position in customer.metafields.position.coffee %}
-    {% assign coffee = all_products[position].title %}    
-    {% assign i = forloop.index0 %}
-    <tr>
-      {% for field in shop.metafields.acf_settings.customer.fields %}
-        {% assign col_name = field.name %}
-        {% assign col_value = customer.metafields.position[col_name] %}
-        {% if col_name == 'coffee' %}
-          <td>{{ coffee }}</td>
-        {% else %}
-          <td>{{ col_value[i] }}</td>
-        {% endif %}
-      {% endfor %}
-    </tr>
-  {% endfor %}
-</table>
+{%- if settings.account_show_positions_report != blank -%}
+  <h2>Positions Report</h2>
+  
+  <table>
+    {% tablerow field in shop.metafields.acf_settings.customer.fields %}
+      {{ field.label }}
+    {% endtablerow %}
+    {% for position in customer.metafields.position.coffee %}
+      {% assign coffee = all_products[position].title %}    
+      {% assign i = forloop.index0 %}
+      <tr>
+        {% for field in shop.metafields.acf_settings.customer.fields %}
+          {% assign col_name = field.name %}
+          {% assign col_value = customer.metafields.position[col_name] %}
+          {% if col_name == 'coffee' %}
+            <td>{{ coffee }}</td>
+          {% else %}
+            <td>{{ col_value[i] }}</td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+{%- endif -%}
