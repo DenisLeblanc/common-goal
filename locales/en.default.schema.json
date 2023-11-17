@@ -317,10 +317,11 @@
       }
     },
     "account": {
-      "name": "Account",
+      "name": "Customer Account",
       "settings": {
         "account_show_positions_report": {
-          "label": "Show Positions Report"
+          "label": "Show Positions Report",
+          "description": "Show positions report taable on customer account page."
         }
       }
     },
