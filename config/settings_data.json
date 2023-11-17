@@ -108,7 +108,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "account_show_positions_report": false,
+    "account_show_positions_report": true,
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
