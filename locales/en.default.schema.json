@@ -321,7 +321,7 @@
       "settings": {
         "account_show_positions_report": {
           "label": "Show Positions Report",
-          "info": "Show positions report taable on customer account page."
+          "info": "Show customer positions report table on account page."
         }
       }
     },
