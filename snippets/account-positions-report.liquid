@@ -1,22 +1,4 @@
 
-{% for order in customer.orders %}
-  <ul>
-    <li>Order Number: {{ order.order_number | t }}</li>
-    <li>Order URL: {{ order.customer_url }}</li>
-    <li>Order name: {{ order.name }}</li>
-    <li>Order Date: {{ order.created_at | time_tag: format: 'date' }}</li>
-    <li>Order Line items: {% for item in order.line_items %}{{ item.title }}{% endfor %}</li>
-      {% for item in order.line_items %}
-        {%- if item.fulfillment -%}
-          {% assign fulfilled_qty = item.fulfillment.fulfillment_line_items[0].quantity %}
-        {% else %}
-          {% assign fulfilled_qty = '0' %}
-        {%- endif -%}
-      {% endfor %}
-    <li>Fulfilled: {{ fulfilled_qty }}</li>
-    <li>Quantity: {% for qty in order.line_items %}{{ qty.quantity }}{% endfor %}</li>
-  </ul>
-{% endfor %}
 
 {%- if settings.account_show_positions_report != blank -%}
   <h2>Positions Report</h2>
