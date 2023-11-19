@@ -44,6 +44,12 @@
     %}
 
     {% style %}
+      @font-face {
+    	font-family: "TAN-NIMBUS";
+    	src: url({{"TAN-NIMBUS.woff2" | file_url}}) format("woff2");
+      }
+
+      
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
