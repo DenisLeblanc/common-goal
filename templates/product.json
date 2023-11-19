@@ -3,16 +3,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
             "text": "{{ product.metafields.custom.origin.value }}, {{ product.metafields.custom.region.value }}",
             "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
           }
         },
         "price": {
@@ -39,8 +39,8 @@
         }
       },
       "block_order": [
-        "title",
         "vendor",
+        "title",
         "price",
         "quantity_selector",
         "buy_buttons",
