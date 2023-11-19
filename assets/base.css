@@ -263,6 +263,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
 }
+.text-body {
+  font-family: GOPHER;
+}
 
 h1,
 h2,
