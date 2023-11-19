@@ -11,15 +11,8 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.origin.value }}",
+            "text": "{{ product.metafields.custom.origin.value }}, {{ product.metafields.custom.region.value }}",
             "text_style": "uppercase"
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -48,7 +41,6 @@
       "block_order": [
         "title",
         "vendor",
-        "caption",
         "price",
         "quantity_selector",
         "buy_buttons",
