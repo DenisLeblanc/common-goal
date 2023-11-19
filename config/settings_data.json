@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/CommonGoal_WORDMARK_GREEN.png",
+    "logo": "shopify:\/\/shop_images\/COMMONGOAL-LOGO_WORDMARK_WHITE.png",
     "logo_width": 200,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -133,9 +133,9 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#fcfcf7",
+          "background": "#508074",
           "background_gradient": "",
-          "text": "#508074",
+          "text": "#fbf9f4",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
