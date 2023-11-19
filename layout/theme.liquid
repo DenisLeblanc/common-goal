@@ -36,7 +36,7 @@
     {%- endif -%}
 
     {{ content_for_header }}
-
+    
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
@@ -44,14 +44,28 @@
     %}
 
     {% style %}
+      /* ANTIPOL VARIABLE FONT */
+      @import url("https://use.typekit.net/wey4jmb.css");
+      /* GOPHER FONT */
+      @import url("https://use.typekit.net/wey4jmb.css");
+      
       @font-face {
     	font-family: "TAN NIMBUS";
     	src: url({{"TAN-NIMBUS.woff2" | file_url}}) format("woff2");
       }
       @font-face {
+        font-family: "ANTIPOL-VARIABLE", sans-serif;
+        font-variation-settings: "STCH" 1, "wght" 400, "wdth" 100;
+      }
+      @font-face {
+        font-family: "ANTIPOL0VARIABLE", sans-serif;
+        font-variation-settings: "STCH" 1, "wdth" 100, "wght" 400;
+      }
+      @font-face {
     	font-family: "GOPHER";
     	src: url({{"Gopher-Regular.woff2" | file_url}}) format("woff2");
       }
+      
 
       
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
