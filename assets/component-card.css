@@ -201,6 +201,7 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: TAN NIMBUS;
 }
 
 .card__heading:last-child {
