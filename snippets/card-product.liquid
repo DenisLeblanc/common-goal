@@ -70,14 +70,23 @@
             <table class="cgc-card-info">
               {% if card_product.metafields.custom.status.value %}
                 <tr>
-                  <th>Status</th>
+                  <th>Status:</th>
                   <td>{{ card_product.metafields.custom.status.value }}</td>
                 </tr>
               {% endif %}
+              {% if card_product.metafields.custom.status.available %}
+                <tr>
+                  <th>Available:</th>
+                  <td>{{ card_product.metafields.custom.status.available }}</td>
+                </tr>
+              {% endif %}
+              {% if card_product.metafields.custom.status.bag_weight %}
+                <tr>
+                  <th>Bag Weight:</th>
+                  <td>{{ card_product.metafields.custom.status.bag_weight }}</td>
+                </tr>
+              {% endif %}
             </table>
-
-  
-             {{ card_product.metafields.custom.status.value }}
   
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
