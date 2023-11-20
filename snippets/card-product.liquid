@@ -86,6 +86,12 @@
                   <td>{{ card_product.metafields.custom.bag_weight.value }}</td>
                 </tr>
               {% endif %}
+              {% if card_product.metafields.custom.profile %}
+                <tr>
+                  <th>Profile:</th>
+                  <td>{{ card_product.metafields.custom.profile.value }}</td>
+                </tr>
+              {% endif %}
             </table>
   
             {%- if show_vendor -%}
