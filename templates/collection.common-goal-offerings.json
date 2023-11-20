@@ -1,5 +1,13 @@
 {
   "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
     "product-grid": {
       "type": "cgc-collection-product-grid",
       "settings": {
@@ -22,6 +30,7 @@
     }
   },
   "order": [
+    "banner",
     "product-grid"
   ]
 }
