@@ -1,4 +1,4 @@
-.product__text  {
+.product__info-container + .product__text  {
   font-size: 1.2rem;
   font-family: "antipol-variable", sans-serif;
   font-variation-settings: "STCH" 1, "wght" 400, "wdth" 100;
