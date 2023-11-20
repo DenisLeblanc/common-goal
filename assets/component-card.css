@@ -92,6 +92,14 @@
   text-align: var(--text-alignment);
 }
 
+.card-information table th {
+  font-weight: normal;
+  text-align: right;
+}
+.card-information table td {
+  text-align: left;
+}
+
 .card__media,
 .card .media {
   bottom: 0;
