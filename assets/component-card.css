@@ -91,7 +91,9 @@
 .card-information {
   text-align: var(--text-alignment);
 }
-
+.card-information table {
+  margin: 0 auto;
+}
 .card-information table th {
   font-weight: normal;
   text-align: right;
