@@ -77,13 +77,13 @@
               {% if card_product.metafields.custom.status.available %}
                 <tr>
                   <th>Available:</th>
-                  <td>{{ card_product.metafields.custom.status.available }}</td>
+                  <td>{{ card_product.metafields.custom.available.value }}</td>
                 </tr>
               {% endif %}
-              {% if card_product.metafields.custom.status.bag_weight %}
+              {% if card_product.metafields.custom.bag_weight %}
                 <tr>
                   <th>Bag Weight:</th>
-                  <td>{{ card_product.metafields.custom.status.bag_weight }}</td>
+                  <td>{{ card_product.metafields.custom.bag_weight.value }}</td>
                 </tr>
               {% endif %}
             </table>
