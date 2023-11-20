@@ -96,7 +96,7 @@
 }
 .card-information table th,
 .card-information table td{
-  padding: 1em;
+  padding: 0.75em;
 }
 .card-information table th {
   font-weight: normal;
