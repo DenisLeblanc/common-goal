@@ -5,7 +5,7 @@
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
-        "color_scheme": "inverse"
+        "color_scheme": "background-1"
       }
     },
     "product-grid": {
@@ -13,7 +13,7 @@
       "settings": {
         "products_per_page": 100,
         "columns_desktop": 3,
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": false,
