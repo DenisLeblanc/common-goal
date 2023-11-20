@@ -1,7 +1,7 @@
 {
   "sections": {
     "banner": {
-      "type": "main-collection-banner",
+      "type": "cgc-collection-banner",
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
@@ -12,7 +12,7 @@
       "type": "cgc-collection-product-grid",
       "settings": {
         "products_per_page": 24,
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "image_shape": "default",
