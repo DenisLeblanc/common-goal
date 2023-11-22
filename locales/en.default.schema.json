@@ -1772,6 +1772,16 @@
         "columns_desktop": {
           "label": "Number of columns on desktop"
         },
+        "cgc_card_icon": {
+          "label": "Card Icon",
+          "options__1": {
+            "label": "CGC Icon"
+          },
+          "options__2": {
+            "label": "Origin Icon"
+          },
+          "info": "Show default CG innitials icon or Origin specific icon. Note: Origin icons must be save in 'Content > Files' directory and named cgc-icon-ORIGIN.png"
+        },
         "enable_filtering": {
           "label": "Enable filtering",
           "info": "Customize filters with the Search & Discovery app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/filters)"
