@@ -2970,7 +2970,7 @@ details-disclosure > details {
 
 
 #MainContent {
-  background: url("https://cdn.shopify.com/s/files/1/0585/6922/8348/files/bg-footer-common-goal.gif?v=1700619503");
+  background: url("https://cdn.shopify.com/s/files/1/0585/6922/8348/files/bg-footer-common-goal.gif?v=1700619503")!important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
