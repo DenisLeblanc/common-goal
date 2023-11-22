@@ -2971,9 +2971,9 @@ details-disclosure > details {
 
 #MainContent {
   background-image: url("https://cdn.shopify.com/s/files/1/0585/6922/8348/files/bg-footer-common-goal.gif?v=1700619503")!important;
-  background-position: center bottom;
+  background-position: center top;
   background-size: 100% auto;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
