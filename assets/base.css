@@ -2969,7 +2969,7 @@ details-disclosure > details {
 }
 
 
-main#MainContent {
+#MainContent {
   background-image: url('bg-footer-common-goal.gif');
   background-repeat: none;
   background-size: cover;
