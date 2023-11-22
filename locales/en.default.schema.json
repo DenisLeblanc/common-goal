@@ -1773,7 +1773,7 @@
           "label": "Number of columns on desktop"
         },
         "cgc_card_icon": {
-          "label": "Card Icon",
+          "label": "CGC Card Icon",
           "options__1": {
             "label": "CGC Icon"
           },
