@@ -50,8 +50,11 @@
     >
 
       <div class="card__content">
-        <div class="card__information">hello
+        <div class="card__information">         
           {% if card_product.metafields.custom.origin.value %}
+            {% assign img_src =  card_product.metafields.custom.origin.value | downcase | replace: ' ', '-' %}
+            {{ img_src }}
+            <img src="">
             <p>{{ card_product.metafields.custom.origin.value }}</p>
           {% endif %}
           <h2
