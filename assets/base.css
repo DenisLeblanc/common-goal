@@ -2971,8 +2971,8 @@ details-disclosure > details {
 
 main#MainContent {
   background-image: url('/assets/bg-footer-common-goal.gif');
-  background-position: bottom fixed;
-  
+  background-repeat: none;
+  background-size: cover;
 }
 
 .content-container {
