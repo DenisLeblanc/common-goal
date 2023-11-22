@@ -51,8 +51,8 @@
 
       <div class="card__content">
         <div class="card__information">  
-        {{ section.settings.cgc_card_icon }}
-          <img src="">
+          {% assign icon_file = section.settings.cgc_card_icon | append: ".png" %}
+          <img src="{{ icon_file }}">
           {% if card_product.metafields.custom.origin.value %}
             <p>{{ card_product.metafields.custom.origin.value }}</p>
           {% endif %}
