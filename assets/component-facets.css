@@ -1,3 +1,7 @@
+#main-collection-filters * {
+  color: darkgray;
+}
+
 .facets-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
