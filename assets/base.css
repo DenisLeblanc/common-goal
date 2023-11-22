@@ -2970,7 +2970,9 @@ details-disclosure > details {
 
 
 main#MainContent {
-  background: url('/assets/bg-footer-common-goal.gif') bottom center fixed;
+  background-image: url('/assets/bg-footer-common-goal.gif');
+  background-position: bottom fixed;
+  
 }
 
 .content-container {
