@@ -2970,9 +2970,9 @@ details-disclosure > details {
 
 
 main#MainContent {
-  background-image: url('/assets/bg-footer-common-goal.gif');
+  background-image: url('bg-footer-common-goal.gif');
   background-repeat: none;
-  background-size: cover;
+  background-size: cover;{{ 'your_custom_image.jpg' | asset_url }}
 }
 
 .content-container {
