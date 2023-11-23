@@ -288,6 +288,11 @@ h1.main-page-title {
   font-family: TAN NIMBUS;
 }
 
+.main-page-title
+.collection-hero__title {
+  margin: 5.5rem 0 2.5rem 0;
+}
+
 .hxl {
   font-size: calc(var(--font-heading-scale) * 5rem);
 }
