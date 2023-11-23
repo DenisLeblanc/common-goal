@@ -22,7 +22,8 @@
   height: 52.5rem;
 }
 
-.page-content-wrap {
+.page-content-wrap,
+.component-content-wrap {
   padding: 5rem;
   background: #FBF9F4;
 }
