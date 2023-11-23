@@ -23,7 +23,8 @@
 }
 
 .page-content-wrap,
-.component-content-wrap {
+.component-content-wrap,
+.main-account-wrap {
   padding: 5rem;
   background: #FBF9F4;
 }
