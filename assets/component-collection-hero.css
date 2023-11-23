@@ -35,9 +35,7 @@
   }
 }
 
-.collection-hero__title {
-  margin: 5.5rem 0 2.5rem 0;
-}
+
 
 .collection-hero__title + .collection-hero__description {
   margin-top: 1.5rem;
