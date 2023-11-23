@@ -93,6 +93,13 @@ html.no-js .no-js-hidden {
   display: none !important;
 }
 
+.page-content-wrap,
+.component-content-wrap,
+.main-account-wrap {
+  padding: 5rem;
+  background: #FBF9F4;
+}
+
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
