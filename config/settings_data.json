@@ -171,8 +171,8 @@
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#508074",
-          "button": "#121212",
-          "button_label": "#ffffff",
+          "button": "#f8bdd4",
+          "button_label": "#508074",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
