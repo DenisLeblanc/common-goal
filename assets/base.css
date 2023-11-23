@@ -2357,6 +2357,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
   z-index: initial;
 }
 
+.shopify-section {
+  background: #FBF9F4;
+}
+
 /* Main Header Layout */
 .header-wrapper {
   display: block;
