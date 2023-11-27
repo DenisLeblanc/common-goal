@@ -92,7 +92,7 @@
     {% if card_product.metafields.custom.profile %}
       <div class="card__badge badge_profile">
         <span class="badge">
-          {{ card_product.metafields.custom.profile }}
+          {{ card_product.metafields.custom.profile | upcase }}
         </span>
       </div><!-- card__badge -->
     {%- endif -%}
