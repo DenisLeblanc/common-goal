@@ -199,7 +199,7 @@
 }
 .card__badge.badge_profile .badge {
   background: var(--cgc-pink);
-  border-bottom-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.25rem;
 }
 .card__badge.badge_cert {
   bottom: 0;
@@ -207,7 +207,7 @@
 }
 .card__badge.badge_cert .badge {
   background: var(--cgc-light-green);
-  border-top-left-radius: 1.5rem;
+  border-top-left-radius: 1.25rem;
 }
 
 .card__badge.top {
