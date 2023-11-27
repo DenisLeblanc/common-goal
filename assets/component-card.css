@@ -181,11 +181,15 @@
 
 .card__badge {
   position: absolute;
-  top: 0;
-  right: 0;
   align-self: flex-end;
   grid-row-start: 3;
   justify-self: flex-start;
+}
+
+.card__badge.badge_profile {
+  top: 0;
+  right: 0;
+  background: var(--cgc-pink);
 }
 .card__badge .badge {
   border: none;
