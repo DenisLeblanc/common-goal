@@ -10,7 +10,7 @@
   background: var(--cgc-white);
   /* border: solid 1px var(--cgc-light-green); */
 
-  box-shadow: 6px [6px 20px rgb(0 0 0 / 0.2);
+  box-shadow: 6px 6px 20px rgb(0 0 0 / 0.2);
 }
 
 .active-facets-mobile {
