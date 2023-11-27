@@ -102,9 +102,7 @@
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 0.5em;
-  border-spacing: none;
   border-bottom: 1px solid var(--cgc-light-green);
-  margin: 0;
 }
 .cgc-card-information table th {
   font-weight: normal;
@@ -116,7 +114,6 @@
 .cgc-card-information table td {
   text-align: left;
   width: 50%;
-  border-left: 1px solid var(--cgc-pink);
 }
 
 .card__media,
