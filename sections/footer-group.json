@@ -2,6 +2,40 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "10331d3d-5501-49c4-abd7-fa6b84e836a6": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--15332115742780__10331d3d-5501-49c4-abd7-fa6b84e836a6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "sections--15332115742780__10331d3d-5501-49c4-abd7-fa6b84e836a6-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "sections--15332115742780__10331d3d-5501-49c4-abd7-fa6b84e836a6-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--15332115742780__10331d3d-5501-49c4-abd7-fa6b84e836a6-heading-1",
+        "sections--15332115742780__10331d3d-5501-49c4-abd7-fa6b84e836a6-paragraph-1",
+        "sections--15332115742780__10331d3d-5501-49c4-abd7-fa6b84e836a6-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -18,23 +52,15 @@
             "heading": "Info",
             "menu": "footer"
           }
-        },
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-          }
         }
       },
       "block_order": [
         "footer-0",
-        "footer-1",
-        "footer-2"
+        "footer-1"
       ],
       "settings": {
         "color_scheme": "inverse",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
         "show_social": true,
@@ -49,6 +75,7 @@
     }
   },
   "order": [
+    "10331d3d-5501-49c4-abd7-fa6b84e836a6",
     "footer"
   ]
 }
