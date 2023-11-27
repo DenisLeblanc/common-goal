@@ -85,11 +85,10 @@
               </tr>
             {% endif %}
           </table>
-        </div>
-      </div>
-      
-      
-    </div>
+        </div><!-- cgc-card-information -->
+      </div><!-- card__information -->
+    </div><!-- card__content -->
+    
     <div class="card__badge {{ settings.badge_position }}">
       {% if card_product.metafields.custom.profile %}
         <span
@@ -99,8 +98,9 @@
           {{ card_product.metafields.custom.profile }}
         </span>
       {%- endif -%}
-    </div>
-  </div>
-</div>
+    </div><!-- card__badge -->
+    
+  </div><!-- card -->
+</div><!-- card-wrapper -->
 
 

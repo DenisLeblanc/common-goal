@@ -53,9 +53,7 @@
     	font-family: "TAN NIMBUS";
     	src: url({{"TAN-NIMBUS.woff2" | file_url}}) format("woff2");
       }
-      
 
-      
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -108,6 +106,7 @@
       }
 
       :root {
+        /* Common Goal Variable */
         --cgc-dark-green: #508074;
         --cgc-light-green: #9ABAB5;
         --cgc-pink: #F8BDD4;
