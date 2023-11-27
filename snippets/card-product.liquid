@@ -70,7 +70,7 @@
             {%- assign inventory = card_product.selected_or_first_available_variant.inventory_quantity -%}
               <tr>
                 <th>Available</th>
-                <td>{{ inventory }}</td>
+                <td>{{ inventory }} bags</td>
               </tr>
             {% if card_product.metafields.custom.bag_weight %}
               <tr>
