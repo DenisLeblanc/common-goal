@@ -181,7 +181,7 @@
 
 .card__badge {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   align-self: flex-end;
   grid-row-start: 3;
@@ -193,7 +193,7 @@
   line-height: 1;
   margin: 0;
   padding: 1rem 2rem;
-  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
 .card__badge.top {
