@@ -9,6 +9,7 @@
   padding: 2rem;
   background: var(--cgc-white);
   border: solid 1px var(--cgc-light-green);
+  font-size: 1.5rem;
 }
 
 .active-facets-mobile {
