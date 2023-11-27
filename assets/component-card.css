@@ -106,7 +106,7 @@
 }
 .cgc-card-information table tr:last-child th,
 .cgc-card-information table tr:last-child td {
-  border: none;
+  border-bottom: none;
 }
 .cgc-card-information table th {
   font-weight: normal;
