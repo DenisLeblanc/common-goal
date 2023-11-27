@@ -93,6 +93,7 @@
 }
 .cgc-card-information table {
   width: 100;
+  border-spacing: none;
 }
 .cgc-card-information tr {
   
