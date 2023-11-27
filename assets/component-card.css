@@ -97,6 +97,13 @@
 .cgc-card-information tr {
   
 }
+:root {
+    --cgc-dark-green: #508074;
+  --cgc-light-green: #9ABAB5;
+  --cgc-pink: #F8BDD4;
+  --cgc-white: #FBF9F4;
+  --cgc-dark-grey: #666666;
+}
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 0.5em;
