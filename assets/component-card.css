@@ -102,14 +102,18 @@
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 0.5em;
-  border-bottom: 1px solid var(--cgc-pink);
+  border-bottom: 1px solid var(--cgc-light-green);
+}
+.cgc-card-information table:last-child th,
+.cgc-card-information table:last-child td {
+  border: none;
 }
 .cgc-card-information table th {
   font-weight: normal;
   text-align: right;
   vertical-align: top;
   width: 50%;
-  border-right: 1px solid var(--cgc-pink);
+  border-right: 1px solid var(--cgc-light-green);
 }
 .cgc-card-information table td {
   text-align: left;
