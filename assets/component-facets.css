@@ -189,9 +189,9 @@
 
 .facets__heading {
   display: block;
-  width: 100%;
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
+  margin: 0 2rem 0 0;
 }
 
 .facets__reset {
