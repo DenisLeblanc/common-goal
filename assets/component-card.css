@@ -114,6 +114,7 @@ border-spacing: 0;
 .cgc-card-information table td {
   text-align: left;
   width: 50%;
+  border-left: none;
 }
 
 .card__media,
