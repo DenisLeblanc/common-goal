@@ -189,7 +189,7 @@
   grid-row-start: 3;
   justify-self: flex-start;
 }
-.card_badge .badge {
+.card__badge .badge {
   border: none;
 }
 
