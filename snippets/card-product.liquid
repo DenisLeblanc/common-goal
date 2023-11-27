@@ -88,7 +88,10 @@
           </table>
         </div>
       </div>
-{{ card_product.available }}
+
+      {%- assign inventory = card_product.selected_or_first_available_variant.inventory_quantity -%}
+
+<p>Inventory: {{ inventory }}</p>
       
       <div class="card__badge {{ settings.badge_position }}">
         {%- if card_product.available == false -%}
