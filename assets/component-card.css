@@ -191,6 +191,7 @@
   line-height: 1;
   margin: 0;
   padding: 1rem 2rem;
+  font-size: 0.8rem;
 }
 .card__badge.badge_profile {
   top: 0;
