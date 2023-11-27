@@ -98,7 +98,7 @@
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 1.25rem;
-  border-bottom: 1px solid var(--cgc-dark-green);
+  border-bottom: 1px solid var(--cgc-dark-grey);
 }
 .cgc-card-information table tr:last-child th,
 .cgc-card-information table tr:last-child td {
@@ -109,7 +109,7 @@
   text-align: right;
   vertical-align: top;
   width: 50%;
-  border-right: 1px solid var(--cgc-dark-green);
+  border-right: 1px solid var(--cgc-dark-grey);
 }
 .cgc-card-information table td {
   text-align: left;
