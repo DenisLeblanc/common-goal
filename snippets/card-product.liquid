@@ -88,16 +88,17 @@
         </div>
       </div>
       
-      <div class="card__badge {{ settings.badge_position }}">
-        {% if card_product.metafields.custom.profile %}
-          <span
-            id="Badge-{{ section_id }}-{{ card_product.id }}"
-            class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
-          >
-            {{ card_product.metafields.custom.profile }}
-          </span>
-        {%- endif -%}
-      </div>
+      
+    </div>
+    <div class="card__badge {{ settings.badge_position }}">
+      {% if card_product.metafields.custom.profile %}
+        <span
+          id="Badge-{{ section_id }}-{{ card_product.id }}"
+          class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+        >
+          {{ card_product.metafields.custom.profile }}
+        </span>
+      {%- endif -%}
     </div>
   </div>
 </div>
