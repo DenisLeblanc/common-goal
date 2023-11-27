@@ -94,14 +94,14 @@
 .cgc-card-information table {
   width: 100;
 }
-.cgc-card-information table tr {
-  border-bottom: 1px solid var(--cgc-light-green);
+.cgc-card-information tr {
+  
 }
 
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 0.5em;
-  
+  border-bottom: 1px solid var(--cgc-light-green);
 }
 .cgc-card-information table th {
   font-weight: normal;
