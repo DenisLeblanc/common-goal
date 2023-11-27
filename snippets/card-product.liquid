@@ -88,17 +88,17 @@
         </div><!-- cgc-card-information -->
       </div><!-- card__information -->
     </div><!-- card__content -->
-    
-    <div class="card__badge">
-      {% if card_product.metafields.custom.profile %}
+
+    {% if card_product.metafields.custom.profile %}
+      <div class="card__badge">
         <span
           id="Badge-{{ section_id }}-{{ card_product.id }}"
-          class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+          class="badge badge--bottom-left color-pink"
         >
           {{ card_product.metafields.custom.profile }}
         </span>
-      {%- endif -%}
-    </div><!-- card__badge -->
+      </div><!-- card__badge -->
+    {%- endif -%}
     
   </div><!-- card -->
 </div><!-- card-wrapper -->
