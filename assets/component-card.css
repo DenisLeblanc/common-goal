@@ -190,6 +190,9 @@
   top: 0;
   right: 0;
 }
+.card__badge.badge_profile .card_badge {
+  background: var(--cgc-pink);
+}
 .card__badge .badge {
   border: none;
   display: block;
@@ -197,7 +200,7 @@
   margin: 0;
   padding: 1rem 2rem;
   border-bottom-left-radius: 1.5rem;
-  background: var(--cgc-pink);
+  
 }
 
 .card__badge.top {
