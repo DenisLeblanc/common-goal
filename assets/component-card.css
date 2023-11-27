@@ -193,7 +193,7 @@
   line-height: 1;
   margin: 0;
   padding: 1rem 2rem;
-  border-top-right-radius: 2rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .card__badge.top {
