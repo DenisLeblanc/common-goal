@@ -9,6 +9,10 @@
   padding-top: 1rem;
 }
 
+.facets__wrapper details {
+  background: var(--cgc-white);
+}
+
 .active-facets-mobile {
   margin-bottom: 0.5rem;
 }
