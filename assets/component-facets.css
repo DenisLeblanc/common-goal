@@ -9,11 +9,11 @@
   padding: 2rem;
   background: var(--cgc-white);
   /* border: solid 1px var(--cgc-light-green); */
-  --shadow-horizontal-offset: var(--product-card-shadow-horizontal-offset);
-    --shadow-vertical-offset: var(--product-card-shadow-vertical-offset);
-    --shadow-blur-radius: var(--product-card-shadow-blur-radius);
-    --shadow-opacity: var(--product-card-shadow-opacity);
-    --shadow-visible: var(--product-card-shadow-visible);
+  --shadow-horizontal-offset: 6px;
+    --shadow-vertical-offset: 6px;
+    --shadow-blur-radius: 20px;
+    --shadow-opacity: 20%;
+    --shadow-visible: 1;
 }
 
 .active-facets-mobile {
