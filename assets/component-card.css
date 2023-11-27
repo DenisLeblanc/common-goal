@@ -104,8 +104,8 @@
   padding: 0.5em;
   border-bottom: 1px solid var(--cgc-light-green);
 }
-.cgc-card-information table:last-child th,
-.cgc-card-information table:last-child td {
+.cgc-card-information table tr:last-child th,
+.cgc-card-information table tr:last-child td {
   border: none;
 }
 .cgc-card-information table th {
