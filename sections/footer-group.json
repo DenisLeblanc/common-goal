@@ -8,21 +8,28 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Main Menu",
+            "menu": "main-menu"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "Account Menu",
+            "menu": "account-menu"
+          }
+        },
+        "07c25ae8-a57e-42c0-8cbb-d8bb68428e2d": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
           }
         }
       },
       "block_order": [
         "footer-0",
-        "footer-1"
+        "footer-1",
+        "07c25ae8-a57e-42c0-8cbb-d8bb68428e2d"
       ],
       "settings": {
         "color_scheme": "inverse",
