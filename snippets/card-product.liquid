@@ -67,12 +67,11 @@
                 <td>{{ card_product.metafields.custom.status.value }}</td>
               </tr>
             {% endif %}
-            {% if card_product.metafields.custom.available %}
+            {%- assign inventory = card_product.selected_or_first_available_variant.inventory_quantity -%}
               <tr>
                 <th>Available</th>
-                <td>{{ card_product.metafields.custom.available.value }}</td>
+                <td>{{ inventory }}</td>
               </tr>
-            {% endif %}
             {% if card_product.metafields.custom.bag_weight %}
               <tr>
                 <th>Bag Weight</th>
@@ -88,10 +87,6 @@
           </table>
         </div>
       </div>
-
-      {%- assign inventory = card_product.selected_or_first_available_variant.inventory_quantity -%}
-
-<p>Inventory: {{ inventory }}</p>
       
       <div class="card__badge {{ settings.badge_position }}">
         {%- if card_product.available == false -%}
