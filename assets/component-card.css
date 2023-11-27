@@ -94,7 +94,7 @@
 .cgc-card-information table {
   width: 100;
 }
-.cgc-card-information tr {
+.cgc-card-information table tr {
   border-bottom: 1px solid var(--cgc-light-green);
 }
 
