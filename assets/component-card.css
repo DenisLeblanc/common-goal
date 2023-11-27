@@ -190,7 +190,7 @@
   top: 0;
   right: 0;
 }
-.card__badge.badge_profile .card__badge {
+.card__badge.badge_profile .badge {
   background: var(--cgc-pink);
 }
 .card__badge .badge {
