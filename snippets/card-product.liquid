@@ -96,6 +96,14 @@
         </span>
       </div><!-- card__badge -->
     {%- endif -%}
+
+    {% if card_product.metafields.custom.certification %}
+      <div class="card__badge badge_cert">
+        <span class="badge">
+          {{ card_product.metafields.custom.certification }}
+        </span>
+      </div><!-- card__badge -->
+    {%- endif -%}
     
   </div><!-- card -->
 </div><!-- card-wrapper -->
