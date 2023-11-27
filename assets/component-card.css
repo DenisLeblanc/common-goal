@@ -89,16 +89,12 @@
 }
 
 .cgc-card-information {
-  text-align: var(--text-alignment);
-}
-.cgc-card-information table {
-  width: 100;
-  border-collapse: collapse;
-}
-.cgc-card-information tr {
   
 }
-
+.cgc-card-information table {
+  width: 100%;
+  border-collapse: collapse;
+}
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 0.5em;
