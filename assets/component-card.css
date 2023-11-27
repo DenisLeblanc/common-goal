@@ -148,7 +148,7 @@
 .card__content {
   display: grid;
   grid-template-rows: minmax(0, 1fr) max-content minmax(0, 1fr);
-  padding: 6rem 2rem 4rem;
+  padding: 5rem 2rem 4rem;
   width: 100%;
   flex-grow: 1;
 }
