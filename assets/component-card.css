@@ -101,6 +101,7 @@
 .cgc-card-information table th,
 .cgc-card-information table td {
   padding: 0.5em;
+  border: none;
   border-bottom: 1px solid var(--cgc-light-green);
 }
 .cgc-card-information table th {
