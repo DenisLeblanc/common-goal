@@ -88,23 +88,23 @@
   background-color: transparent;
 }
 
-.card-information {
+.cgc-card-information {
   text-align: var(--text-alignment);
 }
-.card-information table {
+.cgc-card-information table {
   width: 100;
 }
-.card-information table th,
-.card-information table td{
-  padding: 0.75em;
+.cgc-card-information table th,
+.cgc-card-information table td{
+  padding: 0.5em;
 }
-.card-information table th {
+.cgc-card-information table th {
   font-weight: normal;
   text-align: right;
   vertical-align: top;
   width: 50%;
 }
-.card-information table td {
+.cgc-card-information table td {
   text-align: left;
   width: 50%;
 }
