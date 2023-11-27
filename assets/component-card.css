@@ -94,7 +94,7 @@
 .cgc-card-information table {
   width: 100%;
   border-collapse: collapse;
-  line-height: 1;
+  line-height: 1.25;
 }
 .cgc-card-information table th,
 .cgc-card-information table td {
