@@ -189,6 +189,9 @@
   grid-row-start: 3;
   justify-self: flex-start;
 }
+.card_badge .badge {
+  border: none;
+}
 
 .card__badge.top {
   align-self: flex-start;
