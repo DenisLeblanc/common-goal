@@ -22,6 +22,10 @@
   marin-top: 0;
   color: var(--cgc-white);
 }
+#footer_contact .button {
+  background: var(--cgc-white);
+}
+
 
 
 @media screen and (max-width: 749px) {
