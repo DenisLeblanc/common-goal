@@ -23,6 +23,7 @@
   color: var(--cgc-white);
 }
 #footer_contact .button {
+  color: var(--cgc-dark-green);
   background: var(--cgc-white);
 }
 
