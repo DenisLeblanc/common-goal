@@ -12,6 +12,8 @@
 }
 
 #footer_contact {
+  position: relative;
+  top: -50%;
   text-align: center;
   padding: 3rem;
   background: var(--cgc-white);
