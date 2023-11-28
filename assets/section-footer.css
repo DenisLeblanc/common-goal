@@ -12,6 +12,8 @@
 }
 
 #footer_contact {
+  text-align: center;
+  padding: 3rem;
   background: var(--cgc-white);
 }
 
