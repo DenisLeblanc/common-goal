@@ -22,7 +22,7 @@
   marin-top: 0;
   color: var(--cgc-white);
   margin-block-start: 0.0em;
-    margin-block-end: 0.0em;
+    margin-block-end: 0.67em;
 }
 #footer_contact .button {
   color: var(--cgc-dark-green);
