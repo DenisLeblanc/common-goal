@@ -137,9 +137,9 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#fbf9f4",
+          "background": "{{ shop.brand.colors.primary[0].foreground }}",
           "background_gradient": "",
-          "text": "#508074",
+          "text": "{{ shop.brand.colors.primary[0].background }}",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
