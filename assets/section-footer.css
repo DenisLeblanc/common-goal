@@ -17,6 +17,10 @@
   padding: 3rem;
   background: var(--cgc-white);
 }
+.footer_contact_hdr h2 {
+  marin-top: 0;
+}
+
 
 @media screen and (max-width: 749px) {
   .footer .grid {
