@@ -65,6 +65,18 @@
           >
           <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
         </div>
+        <div class="field">
+          <input
+            class="field__input"
+            autocomplete="field"
+            type="text"
+            id="ContactForm-field"
+            name="contact[{{ 'templates.contact.form.field' | t }}]"
+            value="{% if form.field %}{{ form.field }}{% elsif customer %}{{ customer.field }}{% endif %}"
+            placeholder="{{ 'templates.contact.form.field' | t }}"
+          >
+          <label class="field__label" for="ContactForm-field">{{ 'templates.contact.form.field' | t }}</label>
+        </div>
         <div class="field field--with-error">
           <input
             autocomplete="email"
