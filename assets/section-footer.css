@@ -18,9 +18,11 @@
   margin-bottom: 6rem;
   background: var(--cgc-dark-green);
 }
-#footer_contact_hdr h2 {
+.footer_contact_hdr h2 {
   marin-top: 0;
   color: var(--cgc-white);
+  margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
 }
 #footer_contact .button {
   color: var(--cgc-dark-green);
