@@ -206,7 +206,8 @@
   right: 0;
 }
 .card__badge.badge_cert .badge {
-  background: var(--cgc-light-green);
+  color: var(--cgc-white);
+  background: var(--cgc-dark-green);
   border-top-left-radius: 1.25rem;
 }
 
