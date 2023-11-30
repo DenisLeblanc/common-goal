@@ -28,20 +28,30 @@
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  
-  {{ shop.metaobjects.footer_call_to_action.contact-us.action_header.value }}
+  <div id="footer_contact" class="">
+    <div class="footer_contact_hdr">
+      {% if page.handle contains 'contact' %}
+        <h1>We're Glad You're Here</h1>
+      {% else %}
+        <h1>
+          {% if shop.metaobjects.footer_call_to_action.contact-us.action_header %}
+            {{ shop.metaobjects.footer_call_to_action.contact-us.action_header.value }}
+          {% else  %}
+            Some Default Text
+          {% endif %}
+        </h1>
+      {% endif %}
+    </div>
 
-  {% if page.handle contains 'contact' %}
-  {% else %}
-    <div id="footer_contact" class="">
-      <div class="footer_contact_hdr">
-        <h1>Want to collaborate?</h1>
-      </div>
+
+
+    
+      
+        
       <div>
         <a class="button" href="/pages/contact">Contact Us</a>
       </div>
-    </div>
-  {% endif %}
+  </div><!-- #footer_contact -->
   
   {%- liquid
     assign has_social_icons = true
