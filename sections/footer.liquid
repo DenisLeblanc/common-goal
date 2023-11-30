@@ -40,7 +40,7 @@
     {% assign cgc_footer_section_content = shop.metaobjects.footer_sample_request.samples.section_content.value %}
     {% assign cgc_footer_section_button = shop.metaobjects.footer_sample_request.samples.button_label.value %}
     {% assign cgc_footer_section_link = shop.metaobjects.footer_sample_request.samples.button_link.value[0] %}
-  {% elsif cgc_footer_section_handle contains 'samples' %}
+  {% else %}
     {% assign cgc_footer_section_header = shop.metaobjects.footer_contact_section.collaborate.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_contact_section.collaborate.section_content.value %}
     {% assign cgc_footer_section_button = shop.metaobjects.footer_contact_section.collaborate.button_label.value %}
