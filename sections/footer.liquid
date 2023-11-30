@@ -30,7 +30,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {% if page.handle contains 'contact' %}
     {% assign cgc_footer_section_handle = 'collaborate' %}
-  {% else template.name contains 'index' %}
+  {% elsif template.name contains 'index' %}
     {% assign cgc_footer_section_handle = 'samples' %}
   {% endif %}
   
@@ -40,7 +40,7 @@
     {% assign cgc_footer_section_content = shop.metaobjects.footer_sample_request.samples.section_content.value %}
     {% assign cgc_footer_section_button = shop.metaobjects.footer_sample_request.samples.button_label.value %}
     {% assign cgc_footer_section_link = shop.metaobjects.footer_sample_request.samples.button_link.value[0] %}
-  {% else cgc_footer_section_handle contains 'samples' %}
+  {% elsif cgc_footer_section_handle contains 'samples' %}
     {% assign cgc_footer_section_header = shop.metaobjects.footer_contact_section.collaborate.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_contact_section.collaborate.section_content.value %}
     {% assign cgc_footer_section_button = shop.metaobjects.footer_contact_section.collaborate.button_label.value %}
