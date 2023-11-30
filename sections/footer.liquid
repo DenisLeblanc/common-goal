@@ -34,7 +34,7 @@
     {% assign cgc_footer_section_header = shop.metaobjects.footer_sample_request.samples.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_sample_request.samples.section_content.value %}
     {% assign cgc_footer_section_button = shop.metaobjects.footer_sample_request.samples.button_label.value %}
-    {% assign cgc_footer_section_link = '/offerings' %}
+    {% assign cgc_footer_section_link = shop.metaobjects.footer_sample_request.samples.button_link.value[0] %}
   {% else %}
     {% assign cgc_footer_section_header = shop.metaobjects.footer_contact_section.collaborate.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_contact_section.collaborate.section_content.value %}
@@ -50,7 +50,7 @@
       <p>{{ cgc_footer_section_content }}</p>
     </div>  
     <div>
-      <a class="button" href="{{ cgc_footer_section_link }}">{{ cgc_footer_section_button }}</a>
+      <a class="button" href="{{ cgc_footer_section_link }}">{{ cgc_footer_section_link }}</a>
     </div>
   </div><!-- #footer_contact -->
   
