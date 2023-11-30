@@ -29,19 +29,15 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
 
+  {% if page.handle contains 'contact' %}
+    {% assign cgc_section_header = shop.metaobjects.footer_contact_section.samples.main_heading.value %}
+  {% else %}
+    {% assign cgc_section_header = shop.metaobjects.footer_contact_section.collaborate.main_heading.value %}
+  {% endif %}%}
+
   <div id="footer_contact" class="">
     <div class="footer_contact_hdr">
-      {% if page.handle contains 'contact' %}
-        <h1>We're Glad You're Here</h1>
-      {% else %}
-        <h1>
-          {% if shop.metaobjects.footer_contact_section.collaborate %}
-            {{ shop.metaobjects.footer_contact_section.collaborate.main_heading.value }}
-          {% else  %}
-            Some Default Text
-          {% endif %}
-        </h1>
-      {% endif %}
+        <h1>{{ cgc_section_header }}</h1>
     </div>
 
 
