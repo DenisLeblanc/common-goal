@@ -35,7 +35,7 @@
   {% endif %}
   
 
-  {% if cgc_footer_section_handle contains 'collaborate' %}
+  {% if cgc_footer_section_handle == 'collaborate' %}
     {% assign cgc_footer_section_header = shop.metaobjects.footer_sample_request.samples.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_sample_request.samples.section_content.value %}
     {% assign cgc_footer_section_button = shop.metaobjects.footer_sample_request.samples.button_label.value %}
