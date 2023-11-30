@@ -28,14 +28,15 @@
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+
   <div id="footer_contact" class="">
     <div class="footer_contact_hdr">
       {% if page.handle contains 'contact' %}
         <h1>We're Glad You're Here</h1>
       {% else %}
         <h1>
-          {% if shop.metaobjects.footer_call_to_action.contact-us %}
-            {{ shop.metaobjects.footer_call_to_action.contact-us.action_header.value }}
+          {% if shop.metaobjects.footer_contact_section.collaborate %}
+            {{ shop.metaobjects.footer_contact_section.collaborate.main_heading.value }}
           {% else  %}
             Some Default Text
           {% endif %}
