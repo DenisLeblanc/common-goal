@@ -28,7 +28,7 @@
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-
+{{ page.handle }}
   {% if page.handle contains 'contact' %}
     {% assign cgc_footer_section_header = shop.metaobjects.footer_sample_request.samples.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_sample_request.samples.section_content.value %}
