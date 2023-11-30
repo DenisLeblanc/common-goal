@@ -29,7 +29,7 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
 
-  {{ template.name }}
+  {{ shop.metaobjects.footer_sample_request.samples.button_link.value[0] }}
   {% if page.handle contains 'contact' or template.name contains 'index' %}
     {% assign cgc_footer_section_header = shop.metaobjects.footer_sample_request.samples.main_heading.value %}
     {% assign cgc_footer_section_content = shop.metaobjects.footer_sample_request.samples.section_content.value %}
