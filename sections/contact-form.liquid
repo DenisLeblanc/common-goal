@@ -129,6 +129,13 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
+      <div class="field">
+        Do you require samples?
+        <input type="checkbox" name="contact[green]" value="yes" >
+        <label for="green">Green</label>
+        <input type="checkbox" name="contact[roasted]" value="yes" >
+        <label for="roasted">Roasted</label>
+      </div>
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
