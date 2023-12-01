@@ -129,12 +129,23 @@
           {{- 'templates.contact.form.comment' | t -}}
         </label>
       </div>
+      <svg style="display: none">
+        <symbol id="icon-caret" viewBox="0 0 10 6">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+        </symbol>
+      </svg>
       <div class="field">
-        Do you require samples?
-        <input type="checkbox" name="contact[green]" value="yes" >
-        <label for="green">Green</label>
-        <input type="checkbox" name="contact[roasted]" value="yes" >
-        <label for="roasted">Roasted</label>
+        <div class="select">
+          <select class="field__input select__select" id="ContactForm-Options" name="contact[options]" placeholder="Options">
+            <option selected disabled required value="">Do you require samples?</option>
+            <option value="opt1">Green</option>
+            <option value="opt2">Roasted</option>
+          </select>
+          <svg class="icon-caret" aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+            <use href="#icon-caret" />
+          </svg>
+        </div>
+        <label class="field__label" style="visibility: hidden;" for="ContactForm-Options">Do you require samples?</label>
       </div>
       <div class="contact__button">
         <button type="submit" class="button">
