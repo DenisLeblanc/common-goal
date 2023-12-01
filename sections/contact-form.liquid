@@ -113,7 +113,12 @@
           <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
         </div>
         <div class="field">
-          <input class="field__input" type="text" id="ContactForm-website" name="contact[website]" placeholder="Website">
+          <input 
+            class="field__input" 
+            type="text" 
+            id="ContactForm-website" 
+            name="contact[website]" 
+            placeholder="{{- 'templates.contact.form.website' | t -}}">
           <label class="field__label" for="ContactForm-website">Website</label>
         </div>
       </div>
@@ -134,14 +139,25 @@
       <div class="contact__fields">
         <svg style="display: none">
           <symbol id="icon-caret" viewBox="0 0 10 6">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+            <path 
+              fill-rule="evenodd" 
+              clip-rule="evenodd" 
+              d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" 
+              fill="currentColor"
+            >
           </symbol>
         </svg>
         <div class="field">
           <div class="select">
-            <select class="field__input select__select" id="ContactForm-Options" name="contact[options]" placeholder="Options" style="font-size: inherit; padding-top: 0.8rem;">
-              <option selected disabled required value="">Do you require samples?</option>
-              <option default value="No Thanks" >No Thanks</option>
+            <select 
+              class="field__input select__select" 
+              id="ContactForm-Options" 
+              name="contact[options]" 
+              placeholder="Options" 
+              style="font-size: inherit; padding-top: 0.8rem;"
+            >
+              <option selected disabled required value="">{{- 'templates.contact.form.samples' | t -}}</option>
+              <option value="No Thanks" >No Thanks</option>
               <option value="Green">Green</option>
               <option value="Roasted">Roasted</option>
             </select>
