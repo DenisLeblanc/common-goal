@@ -43,10 +43,13 @@
         class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-{{ section.settings.cgc_card_icon }}
+
         {% if section.settings.cgc_card_icon %}
-          {% assign icon_file = section.settings.cgc_card_icon | append: ".png" %}
+          {% assign icon_file = "cgc-icon.png" %}
           <img src="{{ icon_file | file_url }}" width="60px" height="60px">
+        {% endif %}
+        {% if product.metafields.custom.origin.value %}
+          <p>{{ product.metafields.custom.origin.value }}</p>
         {% endif %}
         
         {%- for block in section.blocks -%}
