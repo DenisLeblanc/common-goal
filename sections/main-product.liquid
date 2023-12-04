@@ -66,7 +66,7 @@
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
-    <div class="product__info-wrapper product__info-wrapper--extra-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <div class="product__info-wrapper product__info-wrapper--extra-padding">
       <product-info
         id="ProductInfo-{{ section.id }}"
         data-section="{{ section.id }}"
