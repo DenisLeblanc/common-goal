@@ -74,10 +74,10 @@
                 <td>{{ product.metafields.custom.farm.value }}</td>
               </tr>
             {% endif %}
-            {% if product.metafields.custom.notes %}
+            {% if product.metafields.custom.producer %}
               <tr>
-                <th>Profile</th>
-                <td>{{ product.metafields.custom.notes.value }}</td>
+                <th>Producer</th>
+                <td>{{ product.metafields.custom.producer.value }}</td>
               </tr>
             {% endif %}
             {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
