@@ -36,7 +36,7 @@
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <product-info
+      <product-info 
         id="ProductInfo-{{ section.id }}"
         data-section="{{ section.id }}"
         data-url="{{ product.url }}"
@@ -53,11 +53,10 @@
         <div class="product__title" {{ block.shopify_attributes }}>
           <h1>{{ product.title | escape }}</h1>
           <a href="{{ product.url }}" class="product__title">
-            <h2 class="h1">
-              {{ product.title | escape }}
-            </h2>
+            <h2 class="h1">{{ product.title | escape }}</h2>
           </a>
         </div>
+  
 
         <div class="cgc-card-information">
           Show: region, farm, producer/group/washing station, elevation, varietal, weight, available, status, certification
