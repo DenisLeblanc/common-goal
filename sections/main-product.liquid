@@ -44,13 +44,10 @@
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-        {% if section.settings.cgc_card_icon %}
           {% assign icon_file = "cgc-icon.png" %}
           <img src="{{ icon_file | file_url }}" width="60px" height="60px">
-        {% endif %}
-        {% if product.metafields.custom.origin.value %}
-          <p>{{ product.metafields.custom.origin.value }}</p>
-        {% endif %}
+
+
         
         {%- for block in section.blocks -%}
           {%- case block.type -%}
