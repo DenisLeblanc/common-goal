@@ -64,8 +64,8 @@
           <table class="cgc-card-info">
             {% if product.metafields.custom.status.value %}
               <tr>
-                <th>Status</th>
-                <td>{{ product.metafields.custom.status.value }}</td>
+                <th>Region</th>
+                <td>{{ product.metafields.custom.region.value }}</td>
               </tr>
             {% endif %}
             {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
