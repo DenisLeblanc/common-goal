@@ -86,6 +86,12 @@
                 <td>{{ product.metafields.custom.elevation.value }}</td>
               </tr>
             {% endif %}
+            {% if product.metafields.custom.varietals %}
+              <tr>
+                <th>Varietals</th>
+                <td>{{ product.metafields.custom.varietals.value }}</td>
+              </tr>
+            {% endif %}
             {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
             <tr>
               <th>Available</th>
