@@ -51,20 +51,15 @@
         {% endif %}
 
         <div class="product__title" {{ block.shopify_attributes }}>
-                <h1>{{ product.title | escape }}</h1>
-                <a href="{{ product.url }}" class="product__title">
-                  <h2 class="h1">
-                    {{ product.title | escape }}
-                  </h2>
-                </a>
-              </div>
-        
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
+          <h1>{{ product.title | escape }}</h1>
+          <a href="{{ product.url }}" class="product__title">
+            <h2 class="h1">
+              {{ product.title | escape }}
+            </h2>
+          </a>
+        </div>
 
-              
-            
-            <div class="cgc-card-information">
+        <div class="cgc-card-information">
           <table class="cgc-card-info">
             {% if product.metafields.custom.status.value %}
               <tr>
@@ -91,7 +86,13 @@
             {% endif %}
           </table>
         </div><!-- cgc-card-information -->
-      </div><!-- cgc-card-info -->
+        
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+
+              
+            
+        
             
             Show: region, farm, producer/group/washing station, elevation, varietal, weight, available, status, certification
             {%- when 'price' -%}
