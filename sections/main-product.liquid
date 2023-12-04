@@ -103,6 +103,12 @@
               <th>Available</th>
               <td>{{ inventory }} bags</td>
             </tr>
+            {% if product.metafields.custom.status.value %}
+              <tr>
+                <th>Status</th>
+                <td>{{ product.metafields.custom.status.value }}</td>
+              </tr>
+            {% endif %}
           </table>
         </div><!-- cgc-card-information -->
 
