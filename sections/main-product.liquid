@@ -66,6 +66,35 @@
                   </h2>
                 </a>
               </div>
+            <div class="cgc-card-information">
+          <table class="cgc-card-info">
+            {% if product.metafields.custom.status.value %}
+              <tr>
+                <th>Status</th>
+                <td>{{ product.metafields.custom.status.value }}</td>
+              </tr>
+            {% endif %}
+            {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
+              <tr>
+                <th>Available</th>
+                <td>{{ inventory }} bags</td>
+              </tr>
+            {% if product.metafields.custom.bag_weight %}
+              <tr>
+                <th>Bag Weight</th>
+                <td>{{ product.metafields.custom.bag_weight.value }}</td>
+              </tr>
+            {% endif %}
+            {% if product.metafields.custom.notes %}
+              <tr>
+                <th>Profile</th>
+                <td>{{ product.metafields.custom.notes.value }}</td>
+              </tr>
+            {% endif %}
+          </table>
+        </div><!-- cgc-card-information -->
+      </div><!-- cgc-card-info -->
+            
             Show: region, farm, producer/group/washing station, elevation, varietal, weight, available, status, certification
             {%- when 'price' -%}
               <!-- Common Goal Coffee - START show price only for customers -->
