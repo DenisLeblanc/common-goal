@@ -108,6 +108,12 @@
                 <td>{{ product.metafields.custom.status.value }}</td>
               </tr>
             {% endif %}
+            {% if product.metafields.custom.certification.value %}
+              <tr>
+                <th>Certification</th>
+                <td>{{ product.metafields.custom.certification.value }}</td>
+              </tr>
+            {% endif %}
           </table>
         </div><!-- cgc-card-information -->
 
