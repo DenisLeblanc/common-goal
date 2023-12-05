@@ -1,3 +1,6 @@
+.cgc-card-information {
+  position: relative;
+}
 .cgc-card-information:after {
   content:"";
   display:block;
