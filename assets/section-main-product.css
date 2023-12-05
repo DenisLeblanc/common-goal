@@ -13,7 +13,10 @@
 .cgc-card-information .grid__item {
   max-width: 45%;
 }
-
+.cgc-card-information .grid__item table {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
 
 .product__info-container > .product__text  {
   font-size: 1.2rem;
