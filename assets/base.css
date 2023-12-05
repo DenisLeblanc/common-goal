@@ -976,7 +976,6 @@ summary::-webkit-details-marker {
 
 .grid--2-col .grid__item {
   width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
-  float: left;
 }
 
 @media screen and (min-width: 750px) {
