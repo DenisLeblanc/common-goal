@@ -300,6 +300,7 @@ h5,
 h1,
 h1.main-page-title {
   font-family: TAN NIMBUS;
+  text-transform: uppercase;
 }
 
 h1.main-page-title,
