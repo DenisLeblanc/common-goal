@@ -3,7 +3,7 @@
   display:block;
   clear:both;
 }
-.cgc-card-information.grid--2-col:last-child {
+.cgc-card-information:last-child {
   position: fixed; 
   bottom: 0;
 }
