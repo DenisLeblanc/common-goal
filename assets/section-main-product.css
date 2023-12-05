@@ -8,7 +8,11 @@
 .cgc-card-information .grid__item {
   max-width: 45%;
 }
-
+.cgc-card-information:after {
+  content:"";
+  display:block;
+  clear:both;
+}
 
 .product__info-container > .product__text  {
   font-size: 1.2rem;
