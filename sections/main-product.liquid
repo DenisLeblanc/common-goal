@@ -32,7 +32,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   
-  <div class="page-width "> 
+  <div class="page-width"> 
     <div class="product product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col">
     
       <div class="product__info-wrapper grid__item scroll-trigger animate--slide-in">
@@ -54,7 +54,7 @@
     
   Split tables into large on right and two small on right. Format images below.
           <div class="cgc-card-information">
-            <div class="product_info cgc_product_specs">
+            <div class="product_info cgc_product_specs grid grid--2-col">
               <h2>Specifics</h2>
               <table class="cgc-card-info">
                 {% if product.metafields.custom.status.value %}
