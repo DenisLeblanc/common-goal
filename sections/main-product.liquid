@@ -54,7 +54,7 @@
     
   Split tables into large on right and two small on right. Format images below.
           <div class="cgc-card-information">
-            <div class="product_info cgc_product_specs col_half">
+            <div class="product_info cgc_product_specs grid__item">
               <h2>Specifics</h2>
               <table class="cgc-card-info">
                 {% if product.metafields.custom.status.value %}
@@ -113,7 +113,7 @@
               </table>
             </div>
     
-            <div class="product_info cgc_product_prep col_half">
+            <div class="product_info cgc_product_prep grid__item">
               <h2>Preperation</h2>
               <table class="cgc-card-info">
                 {% if product.metafields.custom.process.value %}
@@ -136,7 +136,7 @@
                 {% endif %}
               </table>
             </div>
-            <div class="product_info cgc_product_sensory col_half">
+            <div class="product_info cgc_product_sensory grid__item">
               <h2>Sensory</h2>
               <table class="cgc-card-info">
                 {% if product.metafields.custom.profile.value %}
