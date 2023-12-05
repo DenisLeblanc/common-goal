@@ -444,11 +444,14 @@
             {% render 'icon-arrow' %}
           </a>
         </product-info>
+
+        <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
+          {% render 'product-media-gallery', variant_images: variant_images %}
+        </div>
+                      
       </div><!-- product__info-wrapper -->
     
-      <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-        {% render 'product-media-gallery', variant_images: variant_images %}
-      </div>
+      
     
       {%- if section.settings.media_position == 'right' -%}
         {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
