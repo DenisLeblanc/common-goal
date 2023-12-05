@@ -1,5 +1,9 @@
-. grid--2-col.cgc_product_specs {
+.grid--2-col.cgc_product_specs {
   float: left;
+}
+.grid--2-col.cgc_product_prep,
+. grid--2-col.cgc_product_prep{
+  float: right;
 }
 
 .product__info-container > .product__text  {
