@@ -2,6 +2,17 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "blocks": {
+        "a65a4740-efb8-4d1c-a7d3-985a8c003444": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        }
+      },
+      "block_order": [
+        "a65a4740-efb8-4d1c-a7d3-985a8c003444"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-f16dadee-be9d-4b7f-bd9a-5a3ef378cf66",
