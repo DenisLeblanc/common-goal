@@ -22,6 +22,10 @@
   line-height: 2;
 }
 
+.product_info h2 {
+  text-align: center;
+}
+
 .product {
   margin: 0;
 }
