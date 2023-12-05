@@ -3,7 +3,7 @@
   display:block;
   clear:both;
 }
-.cgc-card-information:last-child {
+.cgc-card-information .grid__item:last-child {
   position: fixed; 
   bottom: 0;
 }
