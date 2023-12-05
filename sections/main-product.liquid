@@ -59,62 +59,89 @@
   
 
         <div class="cgc-card-information">
-          <h2>Specs</h2>
-          <table class="cgc-card-info">
-            {% if product.metafields.custom.status.value %}
+          <div class="product_info cgc_product_specs">
+            <h2>Specs</h2>
+            <table class="cgc-card-info">
+              {% if product.metafields.custom.status.value %}
+                <tr>
+                  <th>Region</th>
+                  <td>{{ product.metafields.custom.region.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.farm %}
+                <tr>
+                  <th>Farm</th>
+                  <td>{{ product.metafields.custom.farm.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.producer %}
+                <tr>
+                  <th>Producer</th>
+                  <td>{{ product.metafields.custom.producer.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.elevation %}
+                <tr>
+                  <th>Elevation</th>
+                  <td>{{ product.metafields.custom.elevation.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.varietal %}
+                <tr>
+                  <th>Varietals</th>
+                  <td>{{ product.metafields.custom.varietal.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.bag_weight %}
+                <tr>
+                  <th>Weight</th>
+                  <td>{{ product.metafields.custom.bag_weight.value }}</td>
+                </tr>
+              {% endif %}
+              {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
               <tr>
-                <th>Region</th>
-                <td>{{ product.metafields.custom.region.value }}</td>
+                <th>Available</th>
+                <td>{{ inventory }} bags</td>
               </tr>
-            {% endif %}
-            {% if product.metafields.custom.farm %}
-              <tr>
-                <th>Farm</th>
-                <td>{{ product.metafields.custom.farm.value }}</td>
-              </tr>
-            {% endif %}
-            {% if product.metafields.custom.producer %}
-              <tr>
-                <th>Producer</th>
-                <td>{{ product.metafields.custom.producer.value }}</td>
-              </tr>
-            {% endif %}
-            {% if product.metafields.custom.elevation %}
-              <tr>
-                <th>Elevation</th>
-                <td>{{ product.metafields.custom.elevation.value }}</td>
-              </tr>
-            {% endif %}
-            {% if product.metafields.custom.varietal %}
-              <tr>
-                <th>Varietals</th>
-                <td>{{ product.metafields.custom.varietal.value }}</td>
-              </tr>
-            {% endif %}
-            {% if product.metafields.custom.bag_weight %}
-              <tr>
-                <th>Weight</th>
-                <td>{{ product.metafields.custom.bag_weight.value }}</td>
-              </tr>
-            {% endif %}
-            {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
-            <tr>
-              <th>Available</th>
-              <td>{{ inventory }} bags</td>
-            </tr>
-            {% if product.metafields.custom.status.value %}
-              <tr>
-                <th>Status</th>
-                <td>{{ product.metafields.custom.status.value }}</td>
-              </tr>
-            {% endif %}
-            {% if product.metafields.custom.certification.value %}
-              <tr>
-                <th>Certification</th>
-                <td>{{ product.metafields.custom.certification.value }}</td>
-              </tr>
-            {% endif %}
-          </table>
+              {% if product.metafields.custom.status.value %}
+                <tr>
+                  <th>Status</th>
+                  <td>{{ product.metafields.custom.status.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.certification.value %}
+                <tr>
+                  <th>Certification</th>
+                  <td>{{ product.metafields.custom.certification.value }}</td>
+                </tr>
+              {% endif %}
+            </table>
+          </div>
+          <div class="product_info cgc_product_prep">
+            <h2>Specs</h2>
+            <table class="cgc-card-info">
+              {% if product.metafields.custom.process.value %}
+                <tr>
+                  <th>Process</th>
+                  <td>{{ product.metafields.custom.process.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.fermentation %}
+                <tr>
+                  <th>Fermentation</th>
+                  <td>{{ product.metafields.custom.fermentation.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.drying %}
+                <tr>
+                  <th>Drying</th>
+                  <td>{{ product.metafields.custom.drying.value }}</td>
+                </tr>
+              {% endif %}
+            </table>
+          </div>
+          <div class="product_info cgc_product_sensory">
+          </div>
         </div><!-- cgc-card-information -->
 
         <!-- Common Goal Coffee - START show price only for customers -->
