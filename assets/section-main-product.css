@@ -400,7 +400,7 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product__info-container {
-    max-width:80rem;
+    /*max-width:80rem;*/
     margin: 1.5rem auto;
     display: block;
   }
