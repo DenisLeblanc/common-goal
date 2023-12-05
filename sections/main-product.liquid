@@ -36,11 +36,7 @@
     <div class="product product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col">
     
       <div class="product__info-wrapper grid__item scroll-trigger animate--slide-in">
-        <product-info 
-          id="ProductInfo-{{ section.id }}"
-          data-section="{{ section.id }}"
-          data-url="{{ product.url }}"
-          class="product__info-container">
+        <product-info id="ProductInfo-{{ section.id }}" data-section="{{ section.id }}" data-url="{{ product.url }}" class="product__info-container">
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
   
           <img src="{{ "cgc-icon.png" | file_url }}" width="60px" height="60px">
