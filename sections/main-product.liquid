@@ -60,7 +60,7 @@
 
         <div class="cgc-card-information">
           <div class="product_info cgc_product_specs">
-            <h2>Specs</h2>
+            <h2>Specifics</h2>
             <table class="cgc-card-info">
               {% if product.metafields.custom.status.value %}
                 <tr>
@@ -117,8 +117,9 @@
               {% endif %}
             </table>
           </div>
+  
           <div class="product_info cgc_product_prep">
-            <h2>Specs</h2>
+            <h2>Preperation</h2>
             <table class="cgc-card-info">
               {% if product.metafields.custom.process.value %}
                 <tr>
@@ -141,6 +142,27 @@
             </table>
           </div>
           <div class="product_info cgc_product_sensory">
+            <h2>Sensory</h2>
+            <table class="cgc-card-info">
+              {% if product.metafields.custom.profile.value %}
+                <tr>
+                  <th>Profile</th>
+                  <td>{{ product.metafields.custom.profile.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.notes %}
+                <tr>
+                  <th>Notes</th>
+                  <td>{{ product.metafields.custom.notes.value }}</td>
+                </tr>
+              {% endif %}
+              {% if product.metafields.custom.target %}
+                <tr>
+                  <th>Target Score</th>
+                  <td>{{ product.metafields.custom.target.value }}</td>
+                </tr>
+              {% endif %}
+            </table>
           </div>
         </div><!-- cgc-card-information -->
 
