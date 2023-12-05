@@ -1,3 +1,7 @@
+. grid--2-col.cgc_product_specs {
+  float: left;
+}
+
 .product__info-container > .product__text  {
   font-size: 1.2rem;
   font-family: "antipol-variable", sans-serif;
