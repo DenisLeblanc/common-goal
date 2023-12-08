@@ -23,7 +23,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I pick up an order myself?",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Absolutely. Once you're order is ready you can pick it up at the following address.<\/p><p>Seaforth Supply Chain Solutions<br\/>7167 Progress Way<br\/>Delta, BC<br\/>V4G 1K8<\/p>",
             "page": ""
           }
