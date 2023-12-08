@@ -31,9 +31,9 @@
         "template--15471014117436__90fe4daa-2c73-4495-893a-d46d03dc8c93-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What are the pick up hours?",
+            "icon": "question_mark",
+            "row_content": "<p>Pick up hours at Seaforth Supply Chain Solutions are as follows.<\/p><p>Monday - Friday<br\/>9am - 3pm<\/p>",
             "page": ""
           }
         },
