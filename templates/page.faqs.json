@@ -40,8 +40,8 @@
         "template--15471014117436__90fe4daa-2c73-4495-893a-d46d03dc8c93-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
+            "heading": "What is the pickup location?",
+            "icon": "question_mark",
             "row_content": "",
             "page": ""
           }
