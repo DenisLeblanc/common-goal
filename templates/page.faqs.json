@@ -56,7 +56,7 @@
       "settings": {
         "caption": "This is a caption",
         "heading": "Frequently Asked Questions",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "heading_alignment": "center",
         "layout": "section",
         "color_scheme": "scheme-f16dadee-be9d-4b7f-bd9a-5a3ef378cf66",
