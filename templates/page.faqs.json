@@ -14,7 +14,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Where are coffees stored?",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>All coffees are stored at Seaforth Supply Chain Solutions in Delta, BC.<\/p>",
             "page": ""
           }
@@ -41,7 +41,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "What is the pickup location?",
-            "icon": "question_mark",
+            "icon": "none",
             "row_content": "<p>Seaforth Supply Chain Solutions<br\/>7167 Progress Way<br\/>Delta, BC<br\/>V4G 1K8<\/p>",
             "page": "pickup-info"
           }
