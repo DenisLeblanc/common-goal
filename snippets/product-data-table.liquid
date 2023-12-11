@@ -49,12 +49,7 @@
           <td>{{ product.metafields.custom.status.value }}</td>
         </tr>
       {% endif %}
-      {% if product.metafields.custom.certification.value %}
-        <tr>
-          <th>Certification</th>
-          <td>{{ product.metafields.custom.certification.value }}</td>
-        </tr>
-      {% endif %}
+      
       {% if product.metafields.custom.cgc_reference.value %}
         <tr>
           <th>Lot #</th>
@@ -67,18 +62,19 @@
           <td>{{ product.selected_or_first_available_variant.sku }}</td>
         </tr>
       {% endif %}
-      {% if product.metafields.custom.liner.value %}
-        <tr>
-          <th>Liner</th>
-          <td>{{ product.metafields.custom.liner.value }}</td>
-        </tr>
-      {% endif %}
+      
     </table>
   </div>
 
   <div class="product_info cgc_product_prep grid__item">
     <h2>Preperation</h2>
     <table class="cgc-card-info">
+      {% if product.metafields.custom.certification.value %}
+        <tr>
+          <th>Certification</th>
+          <td>{{ product.metafields.custom.certification.value }}</td>
+        </tr>
+      {% endif %}
       {% if product.metafields.custom.process.value %}
         <tr>
           <th>Process</th>
@@ -95,6 +91,12 @@
         <tr>
           <th>Drying</th>
           <td>{{ product.metafields.custom.drying.value }}</td>
+        </tr>
+      {% endif %}
+      {% if product.metafields.custom.liner.value %}
+        <tr>
+          <th>Liner</th>
+          <td>{{ product.metafields.custom.liner.value }}</td>
         </tr>
       {% endif %}
     </table>
