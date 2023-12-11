@@ -70,10 +70,10 @@
                 <td>{{ card_product.metafields.custom.status.value }}</td>
               </tr>
             {% endif %}
-            {% if product.selected_or_first_available_variant.inventory_quantity %}
+            {% if card_product.selected_or_first_available_variant.inventory_quantity %}
               <tr>
                 <th>Available</th>
-                <td>{{ product.selected_or_first_available_variant.inventory_quantity }}</td>
+                <td>{{ card_product.selected_or_first_available_variant.inventory_quantity }}</td>
               </tr>
             {% endif %}
             {% if card_product.metafields.custom.bag_weight %}
