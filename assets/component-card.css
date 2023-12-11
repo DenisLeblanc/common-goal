@@ -89,6 +89,7 @@
 }
 
 .card_header_wrap img,
+.card_header_wrap h1,
 .card_header_wrap h2,
 .card_header_wrap p {
   text-align: center;
