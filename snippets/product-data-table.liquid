@@ -41,7 +41,7 @@
       {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
       <tr>
         <th>Available</th>
-        <td>{{ product.selected_or_first_available_variant.inventory_quantity }} bags</td>
+        <td>{{ product.selected_or_first_available_variant.inventory_quantity }}</td>
       </tr>
       {% if product.metafields.custom.status.value %}
         <tr>
