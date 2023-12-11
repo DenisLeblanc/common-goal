@@ -55,10 +55,10 @@
           <td>{{ product.metafields.custom.certification.value }}</td>
         </tr>
       {% endif %}
-      {% if product.metafields.custom.reference.value %}
+      {% if product.metafields.custom.cgc_reference.value %}
         <tr>
           <th>Lot #</th>
-          <td>{{ product.metafields.custom.reference.value }}</td>
+          <td>{{ product.metafields.custom.cgc_reference.value }}</td>
         </tr>
       {% endif %}
       {% if product.selected_or_first_available_variant.sku %}
