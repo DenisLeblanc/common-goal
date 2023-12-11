@@ -3,15 +3,22 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "a65a4740-efb8-4d1c-a7d3-985a8c003444": {
-          "type": "variant_picker",
+        "c4531c4a-baaa-4fe4-a641-56b426badf97": {
+          "type": "text",
           "settings": {
-            "picker_type": "button"
+            "text": "{{ product.metafields.custom.origin.value }}",
+            "text_style": "body"
+          }
+        },
+        "eb6c41a0-fab0-4fdd-8f4f-625031c69bd2": {
+          "type": "title",
+          "settings": {
           }
         }
       },
       "block_order": [
-        "a65a4740-efb8-4d1c-a7d3-985a8c003444"
+        "c4531c4a-baaa-4fe4-a641-56b426badf97",
+        "eb6c41a0-fab0-4fdd-8f4f-625031c69bd2"
       ],
       "settings": {
         "enable_sticky_info": false,
