@@ -88,6 +88,12 @@
   background-color: transparent;
 }
 
+.card_header_wrap img,
+.card_header_wrap h2,
+.card_header_wrap p {
+  text-align: center;
+}
+
 .cgc-card-information {
   padding-top: 4rem; 
   /* padding-bottom: 2em;*/
