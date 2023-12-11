@@ -38,7 +38,7 @@
           <td>{{ product.metafields.custom.bag_weight.value }}</td>
         </tr>
       {% endif %}
-      {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
+      
       <tr>
         <th>Available</th>
         <td>{{ product.selected_or_first_available_variant.inventory_quantity }}</td>
