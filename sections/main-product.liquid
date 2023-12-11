@@ -163,6 +163,7 @@
           {% else %}
             <a class="button" href="/pages/contact">Call for Price</a>
           {% endif %}
+          <!-- Common Goal Coffee - END show price only for customers -->
           
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -176,7 +177,7 @@
               {%- endform -%}
             </div>
           
-          <!-- Common Goal Coffee - END show price only for customers -->
+          
   
           <p
             class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
