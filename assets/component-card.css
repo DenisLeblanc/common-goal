@@ -87,7 +87,8 @@
 .card--standard.card--text {
   background-color: transparent;
 }
-.cgc_card_header_wrap {
+.cgc_card_header_wrap,
+.product__title h1 {
   text-align: center;
 }
 
