@@ -182,6 +182,7 @@
               </p>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
+                {% render 'product-data-table' %}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
