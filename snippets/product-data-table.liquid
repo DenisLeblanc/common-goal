@@ -38,11 +38,12 @@
           <td>{{ product.metafields.custom.bag_weight.value }}</td>
         </tr>
       {% endif %}
-      
-      <tr>
-        <th>Available</th>
-        <td>{{ product.selected_or_first_available_variant.inventory_quantity }}</td>
-      </tr>
+      {% if product.selected_or_first_available_variant.inventory_quantity %}
+        <tr>
+          <th>Available</th>
+          <td>{{ product.selected_or_first_available_variant.inventory_quantity }}</td>
+        </tr>
+      {% endif %}
       {% if product.metafields.custom.status.value %}
         <tr>
           <th>Status</th>
