@@ -39,8 +39,8 @@
 }
 
 .product {
-  margin: 0;
-  max-width: 80rem;
+  margin: 0 auto;
+  max-width: 100rem;
 }
 
 .product.grid {
