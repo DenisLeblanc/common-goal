@@ -233,7 +233,7 @@
           {%- endif -%}
   
           <p
-            class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
+            class="product__sku no-js-hidden caption-with-letter-spacing{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
             id="Sku-{{ section.id }}"
             role="status"
             {{ block.shopify_attributes }}
