@@ -232,14 +232,7 @@
             </div>
           {%- endif -%}
   
-          <p
-            class="product__sku no-js-hidden caption-with-letter-spacing{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
-            id="Sku-{{ section.id }}"
-            role="status"
-            {{ block.shopify_attributes }}
-          >
-            <span class="visually-hidden">{{ 'products.product.sku' | t }}:</span> {{- product.selected_or_first_available_variant.sku -}}
-          </p>
+          <p class="product__sku" role="status">{{ product.sku }}</p>
   
           <div
             id="Quantity-Form-{{ section.id }}"
