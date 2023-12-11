@@ -41,12 +41,30 @@
       {%- assign inventory = product.selected_or_first_available_variant.inventory_quantity -%}
       <tr>
         <th>Available</th>
-        <td>{{ inventory }} bags</td>
+        <td>{{ product.selected_or_first_available_variant.inventory_quantity }} bags</td>
       </tr>
       {% if product.metafields.custom.status.value %}
         <tr>
           <th>Status</th>
           <td>{{ product.metafields.custom.status.value }}</td>
+        </tr>
+      {% endif %}
+      {% if product.metafields.custom.certification.value %}
+        <tr>
+          <th>Certification</th>
+          <td>{{ product.metafields.custom.certification.value }}</td>
+        </tr>
+      {% endif %}
+      {% if product.metafields.custom.lot.value %}
+        <tr>
+          <th>Lot #</th>
+          <td>{{ product.metafields.custom.lot.value }}</td>
+        </tr>
+      {% endif %}
+      {% if product.metafields.custom.certification.value %}
+        <tr>
+          <th>Certification</th>
+          <td>{{ product.metafields.custom.certification.value }}</td>
         </tr>
       {% endif %}
       {% if product.metafields.custom.certification.value %}
