@@ -37,8 +37,9 @@
     
       <div class="product__info-wrapper grid__item scroll-trigger animate--slide-in">
         <product-info id="ProductInfo-{{ section.id }}" data-section="{{ section.id }}" data-url="{{ product.url }}" class="product__info-container">
+          
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
+          
           <div class="cgc_card_header_wrap">
             <div class="cgc_icon_wrap">
               <img src="{{ "cgc-icon.png" | file_url }}" width="80px" height="80px">  
@@ -159,6 +160,10 @@
   
           <!-- Common Goal Coffee - START show price only for customers -->
           {% if customer %}
+          {% else %}
+            <a class="button" href="/pages/contact">Call for Price</a>
+          {% endif %}
+          
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price',
                 product: product,
@@ -187,9 +192,7 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
-          {% else %}
-            <a class="button" href="/pages/contact">Call for Price</a>
-          {% endif %}
+          
           <!-- Common Goal Coffee - END show price only for customers -->
   
           <p
