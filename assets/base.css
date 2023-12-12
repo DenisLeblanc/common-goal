@@ -2578,8 +2578,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .header__icon.header__icon--account .icon-account {
-  height: 2rem;
-  width: 2rem;
+  height: 20px;
+  width: 20px;
 }
 
 .header__icon:hover .icon,
