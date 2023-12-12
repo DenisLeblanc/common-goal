@@ -2581,6 +2581,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   height: 2rem;
   width: 2rem;
   margin-left: -5em;
+  margin-right: 1rem;
 }
 
 .header__icon:hover .icon,
