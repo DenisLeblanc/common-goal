@@ -2550,8 +2550,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   grid-area: icons;
   justify-self: end;
   padding-right: 0.8rem;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .header__icons .shopify-app-block {
@@ -2573,6 +2571,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__icon span {
   height: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .header__icon::after {
