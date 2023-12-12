@@ -2565,6 +2565,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   justify-content: center;
   text-transform: uppercase;
   text-decoration: none;
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .header__icon {
