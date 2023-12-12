@@ -2578,9 +2578,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 .header__icon.header__icon--account .icon-account {
-  height: 20px;
-  width: 20px;
-  margin-left: -4em;
+  height: 2rem;
+  width: 2rem;
+  margin-left: -5em;
 }
 
 .header__icon:hover .icon,
