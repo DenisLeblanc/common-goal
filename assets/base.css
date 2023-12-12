@@ -2601,6 +2601,11 @@ product-info .loading__spinner:not(.hidden) ~ *,
   margin-right: -1.2rem;
 }
 
+.header__icon--account {
+  position: relative;
+  margin-right: -1.2rem;
+}
+
 .header__icon--menu[aria-expanded='true']::before {
   content: '';
   top: 100%;
