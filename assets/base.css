@@ -2563,6 +2563,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .header__icon {
@@ -2571,8 +2573,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__icon span {
   height: 100%;
-  text-transform: uppercase;
-  text-decoration: none;
+  
 }
 
 .header__icon::after {
