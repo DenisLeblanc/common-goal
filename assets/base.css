@@ -2577,6 +2577,11 @@ product-info .loading__spinner:not(.hidden) ~ *,
   content: none;
 }
 
+.header__icon.header__icon--account .icon-account {
+  height: 2rem;
+  width: 2rem;
+}
+
 .header__icon:hover .icon,
 .modal__close-button:hover .icon {
   transform: scale(1.07);
