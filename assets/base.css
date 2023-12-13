@@ -459,7 +459,7 @@ table:not([class]) {
 table:not([class]) td,
 table:not([class]) th {
   padding: 1em;
-  border: 0.1rem solid rgba(var(--cgc-dark-green));
+  border: 0.1rem solid var(--cgc-dark-green);
 }
 
 @media screen and (max-width: 749px) {
