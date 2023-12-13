@@ -5,11 +5,3 @@
 <a href="{{ routes.account_addresses_url }}">
   {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
 </a>
-
-<p>Accounts page menu in case we need it.</p>
-<!-- Account Menu -->
-<ul class="account-menu">
-  {% for link in linklists.account-menu.links %}
-    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-  {% endfor %}
-</ul>
