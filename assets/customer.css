@@ -69,9 +69,6 @@
   font-size: 1.6rem;
   position: relative;
 }
-.customer table thead {
-  border-bottom: none;
-}
 
 @media screen and (min-width: 750px) {
   .customer table {
