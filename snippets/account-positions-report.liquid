@@ -4,11 +4,9 @@
   <h2>Positions Report</h2>
   
   <table>
-    <thead>
     {% tablerow field in shop.metafields.acf_settings.customer.fields %}
       {{ field.label }}
     {% endtablerow %}
-    </thead>
     {% for position in customer.metafields.position.coffee %}
       {% assign coffee = all_products[position].title %}    
       {% assign i = forloop.index0 %}
