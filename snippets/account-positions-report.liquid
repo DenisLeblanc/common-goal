@@ -6,7 +6,7 @@
   <table>
     <thead>
     {% tablerow field in shop.metafields.acf_settings.customer.fields %}
-      <th>{{ field.label }}</th>
+      {{ field.label }}
     {% endtablerow %}
     </thead>
     {% for position in customer.metafields.position.coffee %}
