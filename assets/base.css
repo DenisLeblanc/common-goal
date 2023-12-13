@@ -464,9 +464,7 @@ table:not([class]) th {
 table:not([class]) th {
   border-bottom: none;
 }
-table tr:first-child {
-  background: red;
-}
+
 
 @media screen and (max-width: 749px) {
   .small-hide {
