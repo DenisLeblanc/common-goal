@@ -456,9 +456,13 @@ table:not([class]) {
   /* draws the table border  */
 }
 
-table:not([class]) td {
+table:not([class]) td,
+table:not([class]) th {
   padding: 1em;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+}
+table:not([class]) th {
+  border-bottom: none;
 }
 
 @media screen and (max-width: 749px) {
