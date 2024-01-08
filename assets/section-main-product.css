@@ -1,6 +1,6 @@
 .cgc-card-information {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem!important;
 }
 .cgc-card-information:after {
   content:"";
