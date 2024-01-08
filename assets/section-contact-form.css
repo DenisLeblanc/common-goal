@@ -1,3 +1,7 @@
+.contact .component-content-wrap {
+  padding-top: 0;
+}
+
 .contact img {
   max-width: 100%;
 }
