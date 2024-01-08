@@ -57,11 +57,11 @@
 }
 .product__media-wrapper .grid__item {
   float: left;
+  padding: 0 1em;
 }
 
 .product__media-wrapper .grid__item img {
   max-width: 100%;
-  margin: 0 1em;
 }
 
 @media screen and (min-width: 750px) {
