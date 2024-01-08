@@ -550,7 +550,7 @@
         </a>
 
         <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
-          hello{% render 'product-media-gallery', variant_images: variant_images %}
+          {% render 'product-media-gallery', variant_images: variant_images %}
         </div>                  
       </product-info>
 
@@ -563,7 +563,7 @@
       </div>
     {%- endif -%}
   </div>
-
+hello
   {% render 'product-media-modal' variant_images: variant_images %}
 
   {% assign popups = section.blocks | where: 'type', 'popup' %}
