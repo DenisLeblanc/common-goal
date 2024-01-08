@@ -57,6 +57,7 @@
 }
 .product__media-wrapper .grid__item {
   float: left;
+  width: 50%;
 }
 
 .product__media-wrapper .grid__item img {
