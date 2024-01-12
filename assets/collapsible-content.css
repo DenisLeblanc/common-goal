@@ -4,6 +4,7 @@
 }
 
 .collapsible-section-layout {
+  padding: 0;
   padding-bottom: 5rem;
   /* padding-top: 5rem; */
   max-width: 80rem;
