@@ -94,6 +94,12 @@
           <td>{{ product.metafields.custom.drying.value }}</td>
         </tr>
       {% endif %}
+      {% if product.metafields.custom.grade.value %}
+        <tr>
+          <th>Grade</th>
+          <td>{{ product.metafields.custom.grade.value }}</td>
+        </tr>
+      {% endif %}
       {% if product.metafields.custom.liner.value %}
         <tr>
           <th>Liner</th>
