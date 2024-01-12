@@ -4,7 +4,7 @@
 }
 
 .collapsible-content .collapsible-content__wrapper {
-  box-shadow: none;
+  box-shadow: none!important;
 }
 
 .collapsible-section-layout {
