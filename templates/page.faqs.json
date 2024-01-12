@@ -54,8 +54,8 @@
         "template--15471014117436__90fe4daa-2c73-4495-893a-d46d03dc8c93-collapsible_row-4"
       ],
       "settings": {
-        "caption": "This is a caption",
-        "heading": "Frequently Asked Questions",
+        "caption": "",
+        "heading": "",
         "heading_size": "h0",
         "heading_alignment": "center",
         "layout": "section",
