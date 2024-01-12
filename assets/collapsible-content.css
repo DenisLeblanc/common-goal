@@ -3,7 +3,7 @@
   z-index: 0;
 }
 
-.collapsible-content .collapsible-content-wrapper {
+.collapsible-content .collapsible-content__wrapper {
   box-shadow: none;
 }
 
