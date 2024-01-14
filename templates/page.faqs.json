@@ -40,7 +40,7 @@
         "template--15471014117436__90fe4daa-2c73-4495-893a-d46d03dc8c93-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What is the warehouse and pick-up location?",
+            "heading": "Where is the warehouse and pick-up location?",
             "icon": "none",
             "row_content": "<p>Seaforth Supply Chain Solutions<br\/>7167 Progress Way<br\/>Delta, BC<br\/>V4G 1K8<\/p>",
             "page": "pickup-info"
