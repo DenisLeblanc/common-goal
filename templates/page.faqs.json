@@ -13,9 +13,9 @@
         "template--15471014117436__90fe4daa-2c73-4495-893a-d46d03dc8c93-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Where are coffees stored?",
+            "heading": "Where are coffees currently stored?",
             "icon": "none",
-            "row_content": "<p>All coffees are stored at Seaforth Supply Chain Solutions in Delta, BC.<\/p>",
+            "row_content": "<p>All coffees are currently stored in Delta, British Columbia, Canada.<\/p>",
             "page": ""
           }
         },
@@ -24,7 +24,7 @@
           "settings": {
             "heading": "Can I pick up an order myself?",
             "icon": "none",
-            "row_content": "<p>Absolutely. Once you're order is ready you can pick it up at the following address.<\/p><p>Seaforth Supply Chain Solutions<br\/>7167 Progress Way<br\/>Delta, BC<br\/>V4G 1K8<\/p>",
+            "row_content": "<p>Absolutely. Once you're order is ready you can pick it up at the warehouse.<\/p>",
             "page": ""
           }
         },
@@ -33,7 +33,7 @@
           "settings": {
             "heading": "What are the pick up hours?",
             "icon": "none",
-            "row_content": "<p>Pick up hours at Seaforth Supply Chain Solutions are as follows.<\/p><p>Monday - Friday<br\/>9am - 3pm<\/p>",
+            "row_content": "<p>Pick up hours at Seaforth Supply Chain Solutions are as follows.<\/p><p>Monday - Friday, holidays closed. <br\/>9am - 3pm<\/p>",
             "page": ""
           }
         },
