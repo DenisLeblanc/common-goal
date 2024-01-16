@@ -2395,7 +2395,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
-  background: url('assets/bg-texture-wine-cork-subtle.png') #508074 !important;
+  background: url('/assets/bg-texture-wine-cork-subtle.png') #508074 !important;
   background-repeat: repeat;
 }
 
