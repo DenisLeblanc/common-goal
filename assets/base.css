@@ -2395,7 +2395,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
-  background-image: url('https://cdn.shopify.com/s/files/1/0585/6922/8348/t/3/assets/bg-texture-wine-cork.png');
+  background: url('https://cdn.shopify.com/s/files/1/0585/6922/8348/t/3/assets/bg-texture-wine-cork.png');
   background-repeat: repeat;
 }
 
