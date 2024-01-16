@@ -17,6 +17,8 @@
   padding: 8rem;
   margin-bottom: 6rem;
   background: var(--cgc-dark-green);
+  background: url('bg-texture-wine-cork-subtle.png') #508074 !important;
+  background-repeat: repeat;
 }
 #footer_contact * {
   color: var(--cgc-white);
