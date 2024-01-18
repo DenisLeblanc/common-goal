@@ -2388,7 +2388,11 @@ product-info .loading__spinner:not(.hidden) ~ *,
   z-index: initial;
 }
 
-
+/* Home Page Description Section */
+#shopify-section-template--15332116103228__rich_text {
+  background: url('bg-texture-wine-cork-subtle.png') var(--cgc-white) !important;
+  background-repeat: repeat;
+}
 
 /* Main Header Layout */
 .header-wrapper {
