@@ -25,7 +25,11 @@
           {% else %}
             <td>
               {% if col_value[i] != blank %}
-                {{ col_value[i] }}
+                {% if col_name == 'price' %}
+                  {{ col_value[i] }}/lb
+                {% else %}
+                  {{ col_value[i] }}
+                {% endif %}
               {% else %}
                 N/A
               {% endif %}
