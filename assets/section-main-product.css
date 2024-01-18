@@ -20,7 +20,9 @@
   float: right;
 }
 .cgc-card-information .grid__item {
-  max-width: 45%;
+  @media screen and (min-width: 750px) {
+    max-width: 45%;
+  }
 }
 .cgc-card-information .grid__item table {
   padding-top: 4rem;
