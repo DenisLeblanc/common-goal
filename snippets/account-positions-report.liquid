@@ -17,9 +17,7 @@
           {% if col_name == 'coffee' %}
             <td>
               {% if coffee != blank %}
-                {{ all_products[position].metafields.custom.origin }}
-                <br>
-                {{ coffee }}
+                {{ all_products[position].metafields.custom.origin }} {{ coffee }}
               {% else %}
                 N/A
               {% endif %}
