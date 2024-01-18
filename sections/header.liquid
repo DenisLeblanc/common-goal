@@ -271,7 +271,7 @@
             {%- endform -%}
           </noscript>
 
-          {% comment %}
+          
           <localization-form class="small-hide medium-hide no-js-hidden">
             {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
               <div>
@@ -280,7 +280,7 @@
               </div>
             {%- endform -%}
           </localization-form>
-          {% endcomment %}
+          
         {% endif %}
 
 
@@ -301,7 +301,7 @@
               <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
             {%- endform -%}
           </noscript>
-
+          {% comment %}
           <localization-form class="small-hide medium-hide no-js-hidden">
             {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
               <div>
@@ -310,6 +310,7 @@
               </div>
             {%- endform -%}
           </localization-form>
+          {% endcomment %}
         {%- endif -%}
       </div>
 
