@@ -18,7 +18,7 @@
             <td>{{ coffee }}</td>
           {% else %}
             <td>
-              {% if col_value[i] %}
+              {% if col_value[i] != blank %}
                 {{ col_value[i] }}
               {% else %}
                 n/a
