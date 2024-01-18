@@ -271,7 +271,7 @@
             {%- endform -%}
           </noscript>
 
-          
+          {% comment %}
           <localization-form class="small-hide medium-hide no-js-hidden">
             {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
               <div>
@@ -280,6 +280,7 @@
               </div>
             {%- endform -%}
           </localization-form>
+          {% endcomment %}
         {% endif %}
 
 
