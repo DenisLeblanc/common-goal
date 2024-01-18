@@ -8,9 +8,6 @@
   clear:both;
 }
 .cgc-card-information .grid__item:last-child {
-  position: absolute; 
-  bottom: 0;
-  right: 0;
   @media screen and (min-width: 750px) {
     position: absolute; 
     bottom: 0;
