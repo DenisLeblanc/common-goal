@@ -15,7 +15,13 @@
           {% assign col_name = field.name %}
           {% assign col_value = customer.metafields.position[col_name] %}
           {% if col_name == 'coffee' %}
-            <td>{{ coffee }}</td>
+            <td>
+              {% if coffee != blank %}
+                {{ coffee }}
+              {% else %}
+                n/a
+              {% endif %}
+            </td>
           {% else %}
             <td>
               {% if col_value[i] != blank %}
