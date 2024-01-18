@@ -17,7 +17,13 @@
           {% if col_name == 'coffee' %}
             <td>{{ coffee }}</td>
           {% else %}
-            <td>{{ col_value[i] }}</td>
+            <td>
+              {% if col_value[i] %}
+                {{ col_value[i] }}
+              {% else %}
+                n/a
+              {% endif %}
+            </td>
           {% endif %}
         {% endfor %}
       </tr>
