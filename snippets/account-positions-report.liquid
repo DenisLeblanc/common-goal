@@ -9,7 +9,7 @@
     {% endtablerow %}
     {% for position in customer.metafields.position.coffee %}
       {% assign coffee = all_products[position].title %}  
-      {{ all_products[position] }}
+      {{ all_products[position].custom.origin }}
       {% assign i = forloop.index0 %}
       <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
