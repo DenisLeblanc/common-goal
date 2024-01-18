@@ -2392,6 +2392,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 #shopify-section-template--15332116103228__rich_text .isolate .rich-text {
   background: url('bg-texture-wine-cork-subtle.png') var(--cgc-white) !important;
   background-repeat: repeat;
+  font-size: 2em;
 }
 
 /* Main Header Layout */
