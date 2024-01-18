@@ -2390,7 +2390,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 /* Home Page Description Section */
 #shopify-section-template--15332116103228__rich_text .isolate .rich-text {
-  background: url('bg-texture-groovepaper.png') red !important;
+  background: url('bg-texture-groovepaper.png') var(--cgc-white) !important;
   background-repeat: repeat;
 }
 
