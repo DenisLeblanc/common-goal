@@ -97,7 +97,7 @@
 }
 .cgc-card-information {
   padding-top: 4rem; 
-
+  height: max-content;
   /* padding-bottom: 2em;*/
 }
 .cgc-card-information table {
