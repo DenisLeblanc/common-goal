@@ -7,9 +7,9 @@
   display:block;
   clear:both;
 }
-.cgc-card-information .grid__item table {
+.cgc-card-info {
   @media screen and (min-width: 750px) {
-    padding-bottm: 20px;
+    padding-bottom: 20px;
   }
 }
 .grid--2-col .cgc_product_specs {
