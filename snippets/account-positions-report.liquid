@@ -7,14 +7,12 @@
     {% tablerow field in shop.metafields.acf_settings.customer.fields %}
       {{ field.label }}
     {% endtablerow %}
-    {% for position in customer.metafields.position.coffee %}
-      {% assign coffee = all_products[position].title %}      
+    {% for position in customer.metafields.position.coffee %}    
       {% assign i = forloop.index0 %}
       <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
           {% assign col_name = field.name %}
           {% assign col_value = customer.metafields.position[col_name] %}
-
             <td>
               {% if col_value[i] != blank %}
                 {% if col_name == 'price' %}
