@@ -12,18 +12,6 @@
       {% assign i = forloop.index0 %}
       <tr>
         {% for field in shop.metafields.acf_settings.customer.fields %}
-          {% assign col_name = field.name %}
-          {% assign col_value = customer.metafields.position[col_name] %}
-          
-          {% if col_name == 'coffee' %}
-            <td>
-              {% if coffee != blank %}
-                {{ all_products[position].metafields.custom.origin }} {{ coffee }}
-              {% else %}
-                N/A
-              {% endif %}
-            </td>
-          {% else %}
             <td>
               {% if col_value[i] != blank %}
                 {% if col_name == 'price' %}
@@ -35,7 +23,7 @@
                 N/A
               {% endif %}
             </td>
-          {% endif %}
+
         {% endfor %}
       </tr>
     {% endfor %}
