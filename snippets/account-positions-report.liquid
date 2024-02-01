@@ -14,10 +14,11 @@
         {% for field in shop.metafields.acf_settings.customer.fields %}
           {% assign col_name = field.name %}
           {% assign col_value = customer.metafields.position[col_name] %}
+          {{ col_value }}
           {% if col_name == 'coffee' %}
             <td>
               {% if coffee != blank %}
-                {{ customer.metafields.position.coffee }}
+                {{ all_products[position].metafields.custom.origin }} {{ coffee }}
               {% else %}
                 N/A
               {% endif %}
